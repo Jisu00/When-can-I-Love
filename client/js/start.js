@@ -19,6 +19,15 @@ function init(){
     //}
     flag*=-1;
   }, 1000);
+
+  /// 추가
+
+  setTimeout(()=>{
+    btn_start.classList.add("fade_in");
+    btn_start.style.opacity = "1";
+  }, 500);
+
+  ///
 }
 
 //if (start_page){
