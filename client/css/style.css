@@ -569,6 +569,7 @@ button:hover {
   height: 260px;
   border: 2px solid black;
   margin: 30px auto;
+  background-color: #fafafa;
 }
 
 .result_page .result1 .num_paper #bold_line {
