@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="../css/style.css">
   <!--<link rel="stylesheet" href="/static/styles.css" />-->
   <link rel="stylesheet" href="../css/animation.css">
-  <title>나는 언제쯤 연애할 수 있을까?</title>
+  <title>언제쯤 연애할 수 있을까?</title>
 </head>
 <body class="container">
   <main class="result_page page fade_in">
@@ -17,7 +17,7 @@
         <div class="result_num">
           <div id="num_mac">
             <div id="ma_display">순번 대기 시스템</div>
-            <div id="click_me">눌러보세요!</div>
+            <div id="click_me" class="half_HL_Y">눌러보세요!</div>
             <div class="arrow-container">
               <div class="arrow-down"></div>
             </div>
@@ -29,8 +29,7 @@
 
       <div class="result1 result">
         <div class="character">
-          <label id="type_is">나의 연애 자아는</label>
-          <h2 class="result_title title">캐릭터의 이름</h2>
+          <div id="num_is">나의 대기 번호는?</div>
         </div>
         <div class="num_paper">
           <div id="bold_line"></div>
@@ -40,20 +39,22 @@
           <div id="now_is" style="font-family:'Gothic'">현재 대기 인원<br><label id="now">12312312</label>팀</div>
         </div>
         <div class="rank_explain">
-          <div id="rank_ment">" 마음만 먹으면 당장 연애하겠는데요? "</div>
-          <div style="font-size: 16px;">당신은 전체 참여자 <label id="par" style="font-weight: bold">100명</label> 중,<br>상위 <label id="perc">12.9%</label>입니다.</div>
+          <div id="rank_ment1">"마음만 먹으면 당장 연애하겠는데요?"</div>
+          <div id="rank_ment2">당신은 전체 참여자 <label id="par">100명</label> 중,<br>상위 <label id="perc">12.9%</label>입니다.</div>
         </div>
       </div>   
       
       <div class="result2 result">
-        <div class="character_name"></div>
+        <label id="type_is">나의 연애 자아는</label>
+        <div class="result_title title">캐릭터의 이름</div>
         <img src="../images/Avocado Fitness.png" alt="캐릭터 이미지">
         <!--<img src="/static/images/Avocado Fitness.png" alt="캐릭터 이미지">-->
-        <div style="font-size: 16px; margin-bottom: 30px; font-weight: bold" >당신은 약 <label id="after">1개월 뒤</label>에 연애할 수 있습니다.</div>
+        <div id="after_explain" style="font-size: 16px; margin-bottom: 30px;" >당신은 약 <label id="after"></label>에 연애할 수 있습니다.</div>
         <div class="explanation">
-          <li>설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명</li> 
-          <li>설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명</li>
-          <li>설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명</li>
+          <li id="ex_1"></li> 
+          <li id="ex_2"></li>
+          <li id="ex_3"></li>
+          <li id="ex_4"></li>
         </div>
       </div>
       
@@ -64,10 +65,16 @@
           공유
         </div>
       </div>
+
+      <div id="RESULT" display="none">
+        <div id="TYPE"></div>
+        <div id="SCORE"></div>
+      </div>
       
     </div>
   </main>
   <script src="../js/result.js"></script>
+  <script src="../js/value.js"></script>
   <!--<script src="/static/main.js"></script>-->
 </body>
 </html>

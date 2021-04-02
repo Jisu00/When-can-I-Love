@@ -27,11 +27,11 @@ let result_data = {
 }
 
 let quest = { //page num
-  1: {"title": "평소 들어가고 싶던 동아리가\n매일 친목활동 하는 걸 본\n나는", // 줄 바꿈 이상
+  1: {"title": "평소 들어가고 싶던 동아리가<br>매일 <span class='half_HL'>친목 활동</span> 하는 걸 본 나는", // 줄 바꿈 이상
       "A" : {
-        "text" : "헐 나도 친해지고 싶어 ㅠ\n당장 신청서를 작성한다.",
+        "text" : "헐 나도 친해지고 싶어😥\n당장 신청서를 작성한다.",
         "type" : "E",
-        "score" : 0
+        "score" : 5
       },
       "B": {
         "text" : "잘 적응할 수 있을까..?\n살짝 고민된다.",
@@ -40,55 +40,55 @@ let quest = { //page num
       }
       
     },
-  2: {"title": "친구와 여행가기 위해\n한껏 꾸민 날,\n지하철에서 헌팅을 당했다",
+  2: {"title": "간만의 외출로 한껏 꾸민 날,<br>지하철에서 <span class='half_HL'>헌팅</span>을 받았다." ,
       "A": {
-        "text" : "사이비인가? 의심부터 하며,\n접근한 의도를 재본다.",
-        "type" : "N",
-        "score" : 0
+        "text" : "크 역시 꾸민 건 알아보네.",
+        "type" : "",
+        "score" : 5
       }, 
       "B": {
-        "text" : "내가 오늘 괜찮나?\n단순하게 생각한다.",
-        "type" : "S",
+        "text" : "뭐지? 누구지? 왜 물어보지? ",
+        "type" : "",
         "score" : 0
       }
     },
-  3: {"title": "친해지고 있는 친구와 대화 중 이야깃거리가 떨어졌다.",
+  3: {"title": "썸남/썸녀와의 대화 도중<br><span class='half_HL'>어색한 침묵</span>이 흐른다. ",
       "A": {
-        "text" : "안절부절하며, 최근 봤던 재밌는 게시물을 떠올리려 애쓴다.",
+        "text" : "최근 봤던 재밌는 영상을\n떠올리려 애쓴다.",
         "type" : "F",
-        "score" : 0
+        "score" : 3
       }, 
       "B": {
-        "text" : "신경쓰지 않고 친구가 이야기하길 기다린다.",
+        "text" : "차분히 그 사람이\n이야기하길 기다린다.",
         "type" : "T",
-        "score" : 0
+        "score" : 1
       }
     },
-  4: {"title": "중요한 일정으로 꽉 찼다. 하지만 평소 친해지고 싶던 선배가 밥을 사준다고 한다.", 
+  4: {"title": "평소 호감이 가는 이성에게<br>문자가 왔다.<br><span class='half_HL'>“같이 밥 먹을래요?”</span>", 
       "A": {
-        "text" : "이번주 말고 다음주는 어떠세요? 약속을 미룬다.",
+        "text" : "언제 만날까요? 어디서 볼까요?",
         "type" : "J",
-        "score" : 0
+        "score" : 2
       }, 
       "B": {
-        "text" : "헉 당장 만나요😳 어떻게든 시간을 낸다.",
+        "text" : "좋아요! 장소나 시간은 당일에!",
         "type" : "P",
         "score" : 0
       }
     },
-  5: {"title": "친구가 주변에 좋은 사람이 있다며 소개시켜준다고 한다.",
+  5: {"title": "친구가 주변에<br>좋은 사람이 있다며<br><span class='half_HL'>소개</span>시켜준다고 한다.",
       "A": {
-        "text" : "소개받아서 만나는 건 부담스럽다. 거절한다.",
+        "text" : "누군데? 이것저것 물어본다.",
         "type" : "",
-        "score" : 0
+        "score" : 5
       },
       "B": {
-        "text" : "누군데? 성격은 어때? 어떻게 생겼어? 수락한다.",
+        "text" : "소개받아서 만나는 건 조금 부담스럽다.",
         "type" : "",
         "score" : 0
       }
     },
-  6: {"title": "나는 연애를 할 때,",
+  6: {"title": "나는 <span class='half_HL'>연애를 할 때</span>,",
       "A": {
         "text" : "여러 사람을 짧게 만나는 타입이다.",
         "type" : "N",
@@ -97,78 +97,78 @@ let quest = { //page num
       "B": {
         "text" : "한 사람을 길게 만나는 타입이다.",
         "type" : "S",
-        "score" : 0
+        "score" : 1
       }
     },
-  7: {"title": "평소 눈길이 갔던 이성이 술을 마시자고 한다.",
+  7: {"title": "평소 관심 있던 사람이<br><span class='half_HL'>술을 마시자고 한다</span>.",
       "A": {
         "text" : "기회다! 당장 마시겠다고 한다. ",
         "type" : "E",
-        "score" : 0
+        "score" : 5
       }, 
       "B": {
-        "text" : "천천히 알아가고 싶다. 술보단 밥을 먹자고 한다.",
+        "text" : "천천히 알아가고 싶다.\n술보단 밥을 먹자고 한다.",
         "type" : "I",
-        "score" : 0
+        "score" : 2
       },
     },
-  8: {"title": "내 스타일은 아니지만, 나를 너무 좋아한다는 사람이 있다.",
+  8: {"title": "내 스타일은 아니지만,<br><span class='half_HL'>나를 너무 좋아한다는<br>사람</span>이 있다.",
       "A": {
-        "text" : "굳이 눈을 낮춰가며 만나야하나? 만나지 않는다.",
+        "text" : "굳이 눈을 낮춰가며 만나야하나?\n만나지 않는다.",
         "type" : "T",
-        "score" : 0
+        "score" : -3
       }, 
       "B": {
-        "text" : "나를 그렇게 좋아한다는데.. 만나면서 그 사람에 대해 알아가본다.",
+        "text" : "나를 그렇게 좋아한다는데..\n만나면서 그 사람에 대해 알아가본다.",
         "type" : "F",
-        "score" : 0
+        "score" : 3
       }
     },
-  9: {"title": "평소 원하던 이상형을 발견했을 때 나는", 
+  9: {"title": "평소 원하던 <span class='half_HL'>이상형</span>을<br>발견했을 때 나는", 
       "A": {
-        "text" : "모 아니면 도! 들이대고 본다.",
+        "text" : "모 아니면 도!\n마음에 든다며 전화번호를 묻는다.",
         "type" : "E",
-        "score" : 0
+        "score" : 5
       }, 
       "B": {
-        "text" : "천천히 스며드는 게 대세! 주변에서 맴돌며 서서히 가까워진다.",
+        "text" : "천천히 스며드는 게 대세!\n주변에서 맴돌기 시작한다.",
         "type" : "I",
-        "score" : 0
+        "score" : 2
       }
     },
-  10: {"title": "나만 빼고 모든 친구들이 연애를 시작했다.",
+  10: {"title": "<span class='half_HL'>나만 빼고</span> 모든 친구들이<br>연애를 시작했다.",
       "A": {
-        "text" : "나도 연애하고 싶다.. 연애욕구가 샘솟는다.",
-        "type" : "F",
+        "text" : "나도 연애할래!\n연애세포가 꿈틀거린다.",
+        "type" : "",
+        "score" : 2
+      }, 
+      "B": {
+        "text" : "그래서?\n별로 신경 쓰이지 않는다.",
+        "type" : "",
+        "score" : -5
+      }
+    },
+  11: {"title": "애인의 <span class='half_HL'>“오늘 데이트 어땠어?”</span><br>라는 질문에 나는", 
+      "A": {
+        "text" : "“이 조명, 온도, 습도...\n모든 게 좋았어...”",
+        "type" : "N",
         "score" : 0
       }, 
       "B": {
-        "text" : "연애는 하고 싶지만, 막상 지금 당장 해야한다는 생각은 들지 않는다.",
-        "type" : "T",
+        "text" : "“저녁은 진짜 맛있었고,\n영화는 재밌었고...”",
+        "type" : "S",
         "score" : 0
       }
     },
-  11: {"title": "", 
+  12: {"title": "애인의 <span class='half_HL'>생일 선물</span>을 살 때,", 
       "A": {
-        "text" : "",
-        "type" : "",
-        "score" : 0
-      }, 
-      "B": {
-        "text" : "",
-        "type" : "",
-        "score" : 0
-      }
-    },
-  12: {"title": "", 
-      "A": {
-        "text" : "",
-        "type" : "",
-        "score" : 0
+        "text" : "가격, 브랜드를 하나하나 비교한다.",
+        "type" : "J",
+        "score" : 2
       }, 
       "B" : {
-        "text" : "",
-        "type" : "",
+        "text" : "일단 이걸로 찜하자.\n상품만 우선 정해놓는다.",
+        "type" : "P",
         "score" : 0
       }
     }
@@ -193,7 +193,7 @@ function clickFunction(e){
     result_data["TYPE"][type_result] += 1;
     result_data["score"] += quest[page_num][idValue]["score"];
 
-    console.log(result_data);
+    //console.log(result_data);
     
     // animation
 
@@ -219,17 +219,15 @@ function clickFunction(e){
 function checkTypeAndSend(){
   let text = "";
 
-  result_data["TYPE"]["I"] > result_data["TYPE"]["E"] ? text += "I" : text += "E";
-  result_data["TYPE"]["S"] > result_data["TYPE"]["N"] ? text += "S" : text += "N";
-  result_data["TYPE"]["F"] > result_data["TYPE"]["T"] ? text += "F" : text += "T";
-  result_data["TYPE"]["J"] > result_data["TYPE"]["P"] ? text += "J" : text += "P";
+  result_data["TYPE"]["I"] > result_data["TYPE"]["E"] ? text += "0" : text += "1";
+  result_data["TYPE"]["S"] > result_data["TYPE"]["N"] ? text += "2" : text += "3";
+  result_data["TYPE"]["T"] > result_data["TYPE"]["F"] ? text += "4" : text += "5";
+  result_data["TYPE"]["J"] > result_data["TYPE"]["P"] ? text += "6" : text += "7";
 
   result_data["RESULT"] = text;
   delete result_data["TYPE"];
 
-  alert(text);
-
-  location.href = "../html/result.html";
+  location.href = "../html/result.html?" + text + "/" + result_data["score"];
 }
 
 function next(){
@@ -250,11 +248,11 @@ function next(){
       setTimeout(removeFadeIn, 500);
     }, 500);
 
-    title.innerText = quest[page_num]["title"];
+    title.innerHTML = quest[page_num]["title"];
     A.innerText = quest[page_num]["A"]["text"];
     B.innerText = quest[page_num]["B"]["text"];
 
-    // if(button_wrapper){
+    // if(btn_wrapper){
       setTimeout(()=>{
         A.addEventListener("click", clickFunction, {once: true});
         B.addEventListener("click", clickFunction, {once: true});
@@ -265,7 +263,7 @@ function next(){
 
     run_img.style.left = `${run_pos+=((ground.clientWidth - 33)/ 12)}px`;
     heart_img.style.opacity = `${heart_opa+=6}%`;
-    page_num = 12; // 여기 나중에 바꾸기
+    // page_num = 12; // 여기 나중에 바꾸기
   }
 }
 

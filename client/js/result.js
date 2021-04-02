@@ -9,6 +9,8 @@ const result1 = document.querySelector(".result1");
 const result2 = document.querySelector(".result2");
 const result3 = document.querySelector(".result3");
 
+const html = document.querySelector("html");
+
 const result_wrapper = document.querySelector(".result_wrapper");
 //const result_page = document.querySelector(".result_page");
 
@@ -20,6 +22,8 @@ ma_btn.addEventListener("click", ()=>{
   ///추가
   rank.style.display = "none";
   click_me.style.display = "none";
+
+  html.classList.add("removeAlign");
 
   result1.style.display = "block";
   result2.style.display = "block";
@@ -34,14 +38,13 @@ retest.addEventListener("click", ()=>{
   location.href = "../html/start.html";
 })
 //}
-
-/// 추가
+''
 function init(){
   result1.style.display = "none";
   result2.style.display = "none";
   result3.style.display = "none";
 }
 
-init();
-
-///
+//if (result_page) {
+  init();
+//}

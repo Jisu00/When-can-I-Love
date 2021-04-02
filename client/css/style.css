@@ -51,6 +51,20 @@ body {
 }
 
 @font-face {
+  font-family: 'IBMPlexSansKR-SemiBold';
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-SemiBold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'IBMPlexSansKR-Bold';
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'LAB디지털';
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/LAB디지털.woff") format("woff");
   font-weight: normal;
@@ -86,6 +100,20 @@ body {
 }
 
 @font-face {
+  font-family: 'S-CoreDream-4Regular';
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-4Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'S-CoreDream-5Medium';
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-5Medium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'JSDongkang-Regular';
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/JSDongkang-RegularA1.woff") format("woff");
   font-weight: normal;
@@ -93,8 +121,38 @@ body {
 }
 
 @font-face {
-  font-family: 'KOTRA_BOLD-Bold';
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.1/KOTRA_BOLD-Bold.woff") format("woff");
+  font-family: 'HangeulNuri-Bold';
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_three@1.0/HangeulNuri-Bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NanumBarunGothic';
+  font-style: normal;
+  font-weight: 400;
+  src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot");
+  src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix") format("embedded-opentype"), url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff") format("woff"), url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'NanumBarunGothic';
+  font-style: normal;
+  font-weight: 300;
+  src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot");
+  src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot?#iefix") format("embedded-opentype"), url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.woff") format("woff"), url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'KyoboHand';
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/KyoboHand.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NanumBarunpen';
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumBarunpen.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -137,7 +195,7 @@ a {
 }
 
 .title {
-  font-size: 20px;
+  font-size: 22px;
   margin-bottom: 30px;
   line-height: 35px;
 }
@@ -152,11 +210,33 @@ button:hover {
   cursor: pointer;
 }
 
+.bold {
+  border: 1px solid #d8bbda !important;
+  font-family: "S-CoreDream-4Regular";
+}
+
+.removeAlign {
+  -webkit-box-align: unset;
+      -ms-flex-align: unset;
+          align-items: unset;
+}
+
+.half_HL {
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #e3d7e8), color-stop(50%, transparent));
+  background: linear-gradient(to top, #e3d7e8 50%, transparent 50%);
+}
+
+.half_HL_Y {
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #FFE400), color-stop(50%, transparent));
+  background: linear-gradient(to top, #FFE400 50%, transparent 50%);
+}
+
 .start_page .start_title {
-  font-size: 30px;
+  font-size: 35px;
   margin-bottom: 30px;
   line-height: 50px;
-  font-family: "GyeonggiBatang";
+  font-family: "KyoboHand";
+  font-weight: 100;
 }
 
 .start_page #endLetter {
@@ -185,11 +265,12 @@ button:hover {
 }
 
 .start_page #btn_start {
+  padding: 0;
   border: none;
   background: transparent;
   font-size: 18px;
   outline: none;
-  font-family: "JSDongkang-Regular";
+  font-family: "S-CoreDream-4Regular";
 }
 
 .start_page #start_img {
@@ -210,8 +291,7 @@ button:hover {
 }
 
 .question_page .question_title {
-  font-family: "RIDIBatang";
-  font-weight: 400;
+  font-family: "NanumBarunpen";
   padding: 0px 30px;
   line-height: 30px;
 }
@@ -285,7 +365,7 @@ button:hover {
 
 .question_page .question_btn_wrapper button {
   margin-bottom: 10px;
-  border: 1px dashed gray;
+  border: 1px solid gray;
   width: 85%;
   padding: 15px;
   outline: none;
@@ -293,6 +373,7 @@ button:hover {
   border-radius: 15px;
   background: transparent;
   color: black;
+  font-size: 13px;
 }
 
 .question_page #p_num {
@@ -320,16 +401,18 @@ button:hover {
 
 .result_page #type_is {
   display: block;
-  margin-top: 30px;
+  margin-top: 10px;
   color: gray;
   font-size: 13px;
 }
 
 .result_page .result_title {
   display: block;
-  font-weight: bold;
+  font-family: "IBMPlexSansKR-SemiBold";
+  font-weight: default;
   margin: 0px !important;
   line-height: 1.1;
+  font-size: 24px;
 }
 
 .result_page .result {
@@ -411,9 +494,9 @@ button:hover {
   border-radius: 10px;
   line-height: 100px;
   font-family: "Gothic";
+  font-weight: bold;
   font-size: 18px;
   margin-top: 10px;
-  font-weight: bolder;
 }
 
 .result_page .rank .result_num #num_mac #num_display {
@@ -440,10 +523,13 @@ button:hover {
 
 .result_page .rank .result_num #num_mac #ma_btn {
   position: absolute;
-  top: 200px;
-  right: 30px;
-  width: 50px;
-  height: 30px;
+  top: 190px;
+  right: 20px;
+  width: 60px;
+  height: 40px;
+  background-color: #efefef;
+  border: 1px solid gray;
+  border-radius: 5px;
 }
 
 .result_page .result1 {
@@ -451,16 +537,31 @@ button:hover {
   display: block;
 }
 
-.result_page .result1 .rank_explain #perc {
-  color: #9f7dca;
-  font-weight: bold;
+.result_page .result1 #num_is {
+  font-size: 21px;
+  margin-top: 10px;
+  font-family: "IBMPlexSansKR-SemiBold";
+  margin-bottom: -10px;
 }
 
-.result_page .result1 .rank_explain #rank_ment {
-  font-size: 16px;
+.result_page .result1 .rank_explain #rank_ment1 {
+  font-size: 17px;
   margin-bottom: 10px;
   margin-top: 20px;
-  font-weight: bold;
+  font-family: "IBMPlexSansKR-SemiBold";
+}
+
+.result_page .result1 .rank_explain #rank_ment2 {
+  font-size: 15px;
+}
+
+.result_page .result1 .rank_explain #rank_ment2 #par {
+  font-family: "IBMPlexSansKR-Bold";
+}
+
+.result_page .result1 .rank_explain #rank_ment2 #perc {
+  color: #9f7dca;
+  font-family: "IBMPlexSansKR-Bold";
 }
 
 .result_page .result1 .num_paper {
@@ -484,11 +585,10 @@ button:hover {
 }
 
 .result_page .result1 .num_paper #wait_num {
-  font-size: 58px;
-  margin-top: -5px;
+  font-size: 50px;
   margin-bottom: 10px;
   font-weight: bold;
-  font-family: "default";
+  font-family: "HangeulNuri-Bold";
 }
 
 .result_page .result1 .num_paper #line {
@@ -506,13 +606,13 @@ button:hover {
 .result_page .result1 .num_paper #now_is #now {
   color: red;
   font-weight: bold;
-  font-size: 20px;
-  font-family: "default";
+  font-size: 18px;
+  font-family: "HangeulNuri-Bold";
 }
 
 .result_page .result2 #after {
   color: #9f7dca;
-  font-weight: bold;
+  font-family: "IBMPlexSansKR-SemiBold";
 }
 
 .result_page .result2 .explanation {
@@ -524,14 +624,21 @@ button:hover {
   margin-bottom: 10px;
 }
 
+.result_page .result2 #after_explain {
+  font-family: "IBMPlexSansKR-Bold";
+  font-size: 17px;
+}
+
 .result_page .result3 button {
   background: transparent;
   border: 2px solid gray;
   border-radius: 15px;
   outline: none;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: bold;
-  width: 120px;
+  width: 40%;
+  height: 35px;
+  line-height: 18px;
 }
 
 .result_page .result3 #store {
