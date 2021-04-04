@@ -110,28 +110,27 @@ function fillHTML(){
 
   let text;
 
-  // 일단 조건문 안의 score은 임의로 설정함
-  if (score_num >= 35){ 
+  if (score_num >= 13){ 
     text1["random"] = randomValue(1, 7), text = `${text1["random"]}일 뒤`;
     rank_ment.innerText = text1[1]["ment"];
     char_name.innerText = text1[1]["name"];
   }
-  else if (score_num >= 28){
-    text = "1개월 뒤"; // 이건 그냥 한달 이내라고 해도 될듯
+  else if (score_num >= 10){
+    text = "한 달 이내";
     rank_ment.innerText = text1[2]["ment"];
     char_name.innerText = text1[2]["name"];
   }
-  else if (score_num >= 20){
-    text1["random"] = randomValue(2, 6), text = `${text1["random"]}개월 뒤`;
+  else if (score_num >= 7){
+    text1["random"] = randomValue(5, 7), text = `${text1["random"]}개월 뒤`;
     rank_ment.innerText = text1[3]["ment"];
     char_name.innerText = text1[3]["name"];
   }
-  else if (score_num >= 13){
-    text1["random"] = randomValue(7, 12), text = `${text1["random"]}개월 뒤`;
+  else if (score_num >= 4){
+    text1["random"] = randomValue(11, 13), text = `${text1["random"]}개월 뒤`;
     rank_ment.innerText = text1[4]["ment"];
     char_name.innerText = text1[4]["name"];
   }
-  else if (score_num >= 7){
+  else if (score_num >= 1){
     text1["random"] = randomValue(5, 10), text = `${text1["random"]}년 뒤`;
     rank_ment.innerText = text1[5]["ment"];
     char_name.innerText = text1[5]["name"];

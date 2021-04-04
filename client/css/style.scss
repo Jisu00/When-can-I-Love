@@ -181,7 +181,7 @@ body {margin: 0; font-size: 14px;}
 
 button {font-family: $font6;}
 a {text-decoration: none; color: black;}
-.title {font-size: 22px; margin-bottom: 30px; line-height: 35px;}
+.title {font-size: 24px; margin-bottom: 30px; line-height: 35px;}
 
 .wrapper{
   text-align: center;
@@ -301,11 +301,10 @@ button:hover { cursor: pointer;}
       width: 85%;
       padding: 15px;
       outline: none;
-      font-size: 15px;
+      font-size: 14px;
       border-radius: 15px;
       background: transparent;
       color: black;
-      font-size: 13px;
     }
   }
   

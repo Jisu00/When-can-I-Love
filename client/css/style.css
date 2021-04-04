@@ -195,7 +195,7 @@ a {
 }
 
 .title {
-  font-size: 22px;
+  font-size: 24px;
   margin-bottom: 30px;
   line-height: 35px;
 }
@@ -369,11 +369,10 @@ button:hover {
   width: 85%;
   padding: 15px;
   outline: none;
-  font-size: 15px;
+  font-size: 14px;
   border-radius: 15px;
   background: transparent;
   color: black;
-  font-size: 13px;
 }
 
 .question_page #p_num {
