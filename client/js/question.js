@@ -40,9 +40,9 @@ let quest = { //page num
       }
       
     },
-  2: {"title": "<span class='half_HL'>재미있어 보이는 대화</span>" ,
+  2: {"title": "<span class='half_HL'>재미있어 보이는 대화</span>를<br>하는 무리에 나는" ,
       "A": {
-        "text" : "참여한다.",
+        "text" : "끼어든다.",
         "type" : "E",
         "score" : 1
       }, 
