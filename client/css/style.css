@@ -265,12 +265,14 @@ button:hover {
 }
 
 .start_page #btn_start {
-  padding: 0;
-  border: none;
-  background: transparent;
   font-size: 18px;
   outline: none;
   font-family: "S-CoreDream-4Regular";
+  border-radius: 15px;
+  border: 1px solid gray;
+  width: 85%;
+  padding: 20px;
+  background: white;
 }
 
 .start_page #start_img {
@@ -294,7 +296,7 @@ button:hover {
   font-family: "NanumBarunpen";
   padding: 0px 30px;
   line-height: 30px;
-  margin-bottom: 70px;
+  margin-bottom: 60px;
 }
 
 .question_page .progress #run {

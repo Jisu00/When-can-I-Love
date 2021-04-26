@@ -3,6 +3,14 @@ const qm2 = document.querySelector(".qm2");
 const btn_start = document.querySelector("#btn_start");
 //const start_page = document.querySelector(".start_page");
 
+function clickFunction(e){
+  setTimeout(()=>{
+    e.target.classList.add("bold");
+  }, 100);
+
+  e.target.classList.add("magnifyBorder");
+}
+
 function init(){
   let flag = 1;
 
@@ -20,22 +28,14 @@ function init(){
     flag*=-1;
   }, 1000);
 
-  /// 추가
-
-  setTimeout(()=>{
-    btn_start.classList.add("fade_in");
-    btn_start.style.opacity = "1";
-  }, 500);
-
-  ///
 }
 
 //if (start_page){
-  btn_start.addEventListener("click",()=>{
-    btn_start.classList.add("borderLeftRight_after");
+  btn_start.addEventListener("click",(e)=>{
+    clickFunction(e);
     setTimeout(()=>{
       location.href = "../html/question.html";
-    },500);
+    },300);
   });
 //}
 

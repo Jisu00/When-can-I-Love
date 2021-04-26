@@ -222,7 +222,14 @@ button:hover { cursor: pointer;}
     transform: rotate(-30deg);
   }
   
-  #btn_start { padding: 0; border: none; background: transparent; font-size: 18px; outline: none; font-family: $font6-1;}
+  #btn_start {  
+    font-size: 18px; outline: none; font-family: $font6-1;
+    border-radius: 15px;
+    border: 1px solid gray;
+    width: 85%;
+    padding: 20px;
+    background: white;
+  }
   #start_img {
     width: 120%;
     max-width: 250px;
@@ -241,7 +248,7 @@ button:hover { cursor: pointer;}
 
   .question_title {
     font-family: $font14; padding: 0px 30px; line-height: 30px;
-    margin-bottom: 70px;
+    margin-bottom: 60px;
   }
 
   .progress{

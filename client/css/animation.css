@@ -106,26 +106,3 @@
 
 /**/
 
-.borderLeftRight {
-  display: inline-block;
-  position: relative;
-  color: hsl(222, 25%, 14%);
-}
-
-.borderLeftRight::after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 1.5px;
-  bottom: 0;
-  left: 0;
-  background-color: #444444;
-  transform-origin: bottom right;
-  transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
-}
-
-.borderLeftRight_after::after{
-  transform: scaleX(1);
-  transform-origin: bottom left;
-}

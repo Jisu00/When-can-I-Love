@@ -211,7 +211,7 @@ function clickFunction(e){
       B.removeAttribute("disabled");
       
       next();
-    }, 700);
+    }, 500);
   
   }
 }
@@ -245,8 +245,8 @@ function next(){
     setTimeout(()=>{
       btn_wrapper.classList.add("fade_in");
       btn_wrapper.style.opacity = "1";
-      setTimeout(removeFadeIn, 500);
-    }, 500);
+      setTimeout(removeFadeIn, 300);
+    }, 300);
 
     title.innerHTML = quest[page_num]["title"];
     A.innerText = quest[page_num]["A"]["text"];
@@ -256,7 +256,7 @@ function next(){
       setTimeout(()=>{
         A.addEventListener("click", clickFunction, {once: true});
         B.addEventListener("click", clickFunction, {once: true});
-      }, 1000);
+      }, 500);
     //}
 
     p_num.innerText = `${page_num} / 12`;
