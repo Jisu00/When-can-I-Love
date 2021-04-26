@@ -294,6 +294,7 @@ button:hover {
   font-family: "NanumBarunpen";
   padding: 0px 30px;
   line-height: 30px;
+  margin-bottom: 70px;
 }
 
 .question_page .progress #run {
@@ -364,7 +365,7 @@ button:hover {
 }
 
 .question_page .question_btn_wrapper button {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   border: 1px solid gray;
   width: 85%;
   padding: 15px;

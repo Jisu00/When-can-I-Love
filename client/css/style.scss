@@ -239,7 +239,10 @@ button:hover { cursor: pointer;}
   flex-direction: column;
   position: relative;
 
-  .question_title {font-family: $font14; padding: 0px 30px; line-height: 30px;}
+  .question_title {
+    font-family: $font14; padding: 0px 30px; line-height: 30px;
+    margin-bottom: 70px;
+  }
 
   .progress{
     #run { // gif
@@ -296,7 +299,7 @@ button:hover { cursor: pointer;}
     width: 100%;
   
     button {
-      margin-bottom: 10px;
+      margin-bottom: 20px;
       border: 1px solid gray;
       width: 85%;
       padding: 15px;
