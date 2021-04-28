@@ -120,4 +120,40 @@
   transition: 300ms box-shadow cubic-bezier(0.4, 0, 0.6, 1), 300ms background-color cubic-bezier(0.4, 0, 0.6, 1), 300ms color cubic-bezier(0.4, 0, 0.6, 1);
   transition: 300ms box-shadow cubic-bezier(0.4, 0, 0.6, 1), 300ms background-color cubic-bezier(0.4, 0, 0.6, 1), 300ms color cubic-bezier(0.4, 0, 0.6, 1), 300ms -webkit-box-shadow cubic-bezier(0.4, 0, 0.6, 1);
 }
+
+#btn_start {
+  position: relative;
+  display: block;
+  left: 35%;
+  top: -15px;
+  width: 100px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border: 2px solid #000;
+  text-decoration: none;
+  color: #000;
+  -webkit-transition: all  0.3s;
+  transition: all  0.3s;
+}
+
+#btn_start:after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 100%;
+  height: 100%;
+  border-bottom: 2px solid #000;
+  border-right: 2px solid #000;
+}
+
+#btn_start:active {
+  top: -10px;
+  left: 37%;
+}
+
+#btn_start:active:after {
+  border: 0;
+}
 /*# sourceMappingURL=animation.css.map */

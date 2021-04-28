@@ -80,12 +80,7 @@ button:hover { cursor: pointer;}
   }
   
   #btn_start {  
-    font-size: 18px; outline: none; 
-    border-radius: 15px;
-    border: 1px solid gray;
-    width: 85%;
-    padding: 20px;
-    background: white;
+    font-size: 18px;
   }
   #start_img {
     width: 120%;
@@ -226,7 +221,7 @@ button:hover { cursor: pointer;}
     .char_pic {
       width: 200px;
       height: 200px;
-      margin: 10px;
+      margin: 20px 10px;
       object-fit: cover;
     }
 

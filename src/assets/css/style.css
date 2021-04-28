@@ -137,12 +137,6 @@ button:hover {
 
 .start_page #btn_start {
   font-size: 18px;
-  outline: none;
-  border-radius: 15px;
-  border: 1px solid gray;
-  width: 85%;
-  padding: 20px;
-  background: white;
 }
 
 .start_page #start_img {
@@ -305,7 +299,7 @@ button:hover {
 .result_page .char_result .char_pic {
   width: 200px;
   height: 200px;
-  margin: 10px;
+  margin: 20px 10px;
   -o-object-fit: cover;
      object-fit: cover;
 }

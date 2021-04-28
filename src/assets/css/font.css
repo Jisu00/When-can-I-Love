@@ -90,6 +90,20 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Goyang';
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Goyang.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NanumSquareRound';
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 button {
   font-family: "S-CoreDream-3Light";
 }
@@ -103,7 +117,7 @@ button {
 }
 
 .start_title {
-  font-family: "IBMPlexSansKR-Regular";
+  font-family: "NanumSquareRound";
 }
 
 #btn_start {

@@ -5,6 +5,8 @@ $font5 : 'LAB디지털'; // fix
 $font6 : 'S-CoreDream-3Light'; // fix
 $font6-1 : 'S-CoreDream-4Regular';
 $font6-2 : 'S-CoreDream-5Medium';
+$font7 : 'Goyang';
+$font8 : 'NanumSquareRound';
 $font11 : 'HangeulNuri-Bold'; // fix
 $font13 : 'KyoboHand'; //
 $font14 : 'NanumBarunpen'; //
@@ -100,10 +102,24 @@ $font14 : 'NanumBarunpen'; //
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Goyang';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Goyang.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NanumSquareRound';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 button{font-family: $font6;}
 .container{font-family: $font4;}
 .bold {font-family: $font6-1;}
-.start_title{font-family: $font4;}
+.start_title{font-family: $font8;}
 #btn_start{font-family: $font6-1;}
 .question_title{font-family: $font14;}
 .result_title{font-family: $font4-1;}
