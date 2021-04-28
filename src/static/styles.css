@@ -1,0 +1,860 @@
+@font-face {
+  font-family: "RIDIBatang";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/RIDIBatang.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "IBMPlexSansKR-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Regular.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "IBMPlexSansKR-SemiBold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-SemiBold.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "IBMPlexSansKR-Bold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Bold.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "LAB디지털";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/LAB디지털.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Cafe24Simplehae";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Simplehae.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GyeonggiBatang";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/GyeonggiBatang.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "MaruBuri-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/MaruBuri-Regular.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "S-CoreDream-3Light";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "S-CoreDream-4Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-4Regular.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "S-CoreDream-5Medium";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-5Medium.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "JSDongkang-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/JSDongkang-RegularA1.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "HangeulNuri-Bold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_three@1.0/HangeulNuri-Bold.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "NanumBarunGothic";
+  font-style: normal;
+  font-weight: 400;
+  src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot");
+  src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix")
+      format("embedded-opentype"),
+    url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff")
+      format("woff"),
+    url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: "NanumBarunGothic";
+  font-style: normal;
+  font-weight: 300;
+  src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot");
+  src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot?#iefix")
+      format("embedded-opentype"),
+    url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.woff")
+      format("woff"),
+    url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: "KyoboHand";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/KyoboHand.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "NanumBarunpen";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumBarunpen.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media (max-width: 426px) {
+  html,
+  body {
+    height: 100%;
+    width: 100%;
+  }
+  html {
+    overflow-y: scroll;
+  }
+  body {
+    overflow-y: auto;
+  }
+}
+
+@media (min-width: 427px) {
+  body {
+    width: 426px !important;
+    height: 625px;
+  }
+  html {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+}
+
+body {
+  margin: 0;
+  font-size: 14px;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-family: "IBMPlexSansKR-Regular";
+}
+
+.page {
+  width: 90%;
+  height: 100%;
+  padding: 0 !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+button {
+  font-family: "S-CoreDream-3Light";
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.title {
+  font-size: 24px;
+  margin-bottom: 30px;
+  line-height: 35px;
+}
+
+.wrapper {
+  text-align: center;
+  padding: 20px 0px;
+  width: 100%;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.bold {
+  border: 1px solid #be9bc0 !important;
+  font-family: "S-CoreDream-4Regular";
+}
+
+.removeAlign {
+  -webkit-box-align: unset;
+  -ms-flex-align: unset;
+  align-items: unset;
+}
+
+.half_HL {
+  background: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(50%, #e3d7e8),
+    color-stop(50%, transparent)
+  );
+  background: linear-gradient(to top, #e3d7e8 50%, transparent 50%);
+}
+
+.half_HL_Y {
+  background: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(50%, #ffe400),
+    color-stop(50%, transparent)
+  );
+  background: linear-gradient(to top, #ffe400 50%, transparent 50%);
+}
+
+.start_page .start_title {
+  font-size: 35px;
+  margin-bottom: 30px;
+  line-height: 50px;
+  font-family: "KyoboHand";
+  font-weight: 100;
+}
+
+.start_page #endLetter {
+  position: relative;
+}
+
+.start_page .qm {
+  display: inline-block;
+  position: absolute;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.start_page .qm1 {
+  top: 10px;
+  left: 30px;
+  -webkit-transform: rotate(20deg);
+  transform: rotate(20deg);
+}
+
+.start_page .qm2 {
+  left: 45px;
+  top: -15px;
+  -webkit-transform: rotate(-30deg);
+  transform: rotate(-30deg);
+}
+
+.start_page #btn_start {
+  font-size: 18px;
+  outline: none;
+  font-family: "S-CoreDream-4Regular";
+  border-radius: 15px;
+  border: 1px solid gray;
+  width: 85%;
+  padding: 20px;
+  background: white;
+}
+
+.start_page #start_img {
+  width: 120%;
+  max-width: 250px;
+  margin: 0px;
+}
+
+.question_page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+}
+
+.question_page .question_title {
+  font-family: "NanumBarunpen";
+  padding: 0px 30px;
+  line-height: 30px;
+  margin-bottom: 60px;
+}
+
+.question_page .progress_question #run {
+  width: 30px;
+  height: 40px;
+  position: absolute;
+  top: 60px;
+}
+
+.question_page .progress_question #heart_wrapper {
+  position: absolute;
+  top: 70px;
+  right: 7%;
+}
+
+.question_page .progress_question #heart_wrapper #heart {
+  position: relative;
+  width: 25px;
+  height: 25px;
+}
+
+.question_page .progress_question #heart_wrapper #heart:before,
+.question_page .progress_question #heart_wrapper #heart:after {
+  position: absolute;
+  content: "";
+  left: 12px;
+  top: 0;
+  width: 12px;
+  height: 20px;
+  background: #b799b9;
+  border-radius: 20px 20px 0 0;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-transform-origin: 0 100%;
+  transform-origin: 0 100%;
+}
+
+.question_page .progress_question #heart_wrapper #heart:after {
+  left: 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+}
+
+.question_page .progress_question #ground {
+  position: absolute;
+  width: 87%;
+  height: 1.5px;
+  background: black;
+  top: 100px;
+  left: 6%;
+  opacity: 0.6;
+}
+
+.question_page .question_btn_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+}
+
+.question_page .question_btn_wrapper button {
+  margin-bottom: 15px;
+  border: 1px solid gray;
+  width: 85%;
+  padding: 25px;
+  outline: none;
+  font-size: 15px;
+  border-radius: 15px;
+  background: transparent;
+  color: black;
+}
+
+.question_page #p_num {
+  color: darkgray;
+  position: absolute;
+  top: 110px;
+  right: 35px;
+}
+
+.loading_page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.result_page {
+  display: block;
+  margin: 0 auto;
+  overflow: visible;
+}
+
+.result_page #type_is {
+  display: block;
+  margin-top: 10px;
+  color: gray;
+  font-size: 13px;
+}
+
+.result_page .char_name {
+  display: block;
+  font-family: "IBMPlexSansKR-SemiBold";
+  font-weight: default;
+  margin: 0px !important;
+  line-height: 1.1;
+  font-size: 24px;
+}
+
+.result_page .result {
+  margin-bottom: 10px;
+  padding: 20px;
+}
+
+.result_page .result img {
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.result_page .rank {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 95%;
+}
+
+.result_page .rank .result_num {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.result_page .rank .result_num #click_me {
+  font-size: 16px;
+  position: absolute;
+  right: 10px;
+  top: 145px;
+  font-weight: bold;
+}
+
+.result_page .rank .result_num #num_mac {
+  width: 250px;
+  height: 250px;
+  border: 3px solid darkgray;
+  background: #f5f6fa;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+}
+
+.result_page .rank .result_num #num_mac #ma_display {
+  width: 200px;
+  height: 100px;
+  border: 15px solid gray;
+  background: #dfe6e9;
+  border-radius: 10px;
+  line-height: 100px;
+  font-family: "Gothic";
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.result_page .rank .result_num #num_mac #num_display {
+  width: 90px;
+  height: 45px;
+  position: absolute;
+  top: 190px;
+  left: 15px;
+  background: black;
+  border-radius: 3px;
+  line-height: 45px;
+  text-align: center;
+}
+
+.result_page .rank .result_num #num_mac #num_display label {
+  display: block;
+  color: greenyellow;
+  font-size: 40px;
+  letter-spacing: 5px;
+  font-family: "LAB디지털";
+  margin: 0px;
+  margin-left: 5px;
+}
+
+.result_page .rank .result_num #num_mac #ma_btn {
+  position: absolute;
+  top: 190px;
+  right: 20px;
+  width: 60px;
+  height: 40px;
+  background-color: #efefef;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+.result_page .resultTop {
+  text-align: center;
+  display: block;
+}
+
+.result_page .resultTop #num_is {
+  font-size: 21px;
+  margin-top: 10px;
+  font-family: "IBMPlexSansKR-SemiBold";
+  margin-bottom: -10px;
+}
+
+.result_page .resultTop .rank_explain #rank_ment1 {
+  font-size: 17px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  font-family: "IBMPlexSansKR-SemiBold";
+}
+
+.result_page .resultTop .rank_explain #rank_ment2 {
+  font-size: 15px;
+}
+
+.result_page .resultTop .rank_explain #rank_ment2 #par {
+  font-family: "IBMPlexSansKR-Bold";
+}
+
+.result_page .resultTop .rank_explain #rank_ment2 #perc {
+  color: #9f7dca;
+  font-family: "IBMPlexSansKR-Bold";
+}
+
+.result_page .resultTop .num_paper {
+  width: 210px;
+  height: 260px;
+  border: 2px solid black;
+  margin: 30px auto;
+  background-color: #fafafa;
+}
+
+.result_page .resultTop .num_paper #bold_line {
+  width: 180px;
+  height: 4px;
+  background: black;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  margin-left: 14px;
+}
+
+.result_page .resultTop .num_paper #wait_letter {
+  font-size: 20px;
+}
+
+.result_page .resultTop .num_paper #wait_num {
+  font-size: 50px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-family: "HangeulNuri-Bold";
+}
+
+.result_page .resultTop .num_paper #line {
+  width: 180px;
+  height: 2px;
+  background: black;
+  margin-bottom: 10px;
+  margin-left: 14px;
+}
+
+.result_page .resultTop .num_paper #now_is {
+  font-size: 16px;
+}
+
+.result_page .resultTop .num_paper #now_is #now {
+  color: red;
+  font-weight: bold;
+  font-size: 18px;
+  font-family: "HangeulNuri-Bold";
+}
+
+.result_page .resultMiddle #after {
+  color: #9f7dca;
+  font-family: "IBMPlexSansKR-SemiBold";
+}
+
+.result_page .resultMiddle .explanation {
+  margin-top: 10px;
+  text-align: left;
+}
+
+.result_page .resultMiddle .explanation li {
+  margin-bottom: 10px;
+}
+
+.result_page .resultMiddle #after_explain {
+  font-family: "IBMPlexSansKR-Bold";
+  font-size: 17px;
+}
+
+.result_page .resultBottom button {
+  background: transparent;
+  border: 2px solid gray;
+  border-radius: 15px;
+  outline: none;
+  font-size: 14px;
+  font-weight: bold;
+  width: 40%;
+  height: 35px;
+  line-height: 18px;
+}
+
+.result_page .resultBottom #store {
+  margin-right: 15px;
+}
+
+.result_page .resultBottom .share {
+  border: 1px solid gray;
+  border-radius: 15px;
+  margin-top: 30px;
+}
+
+.result_server {
+  display: none;
+}
+
+.fade_in {
+  animation: fadein 1s;
+  -moz-animation: fadein 1s; /* Firefox */
+  -webkit-animation: fadein 1s; /* Safari and Chrome */
+  -o-animation: fadein 1s; /* Opera */
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadein {
+  /* Firefox */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadein {
+  /* Safari and Chrome */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-o-keyframes fadein {
+  /* Opera */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.donutSpinner {
+  display: inline-block;
+  border: 4px solid #e3d7e8;
+  border-left-color: #9f7dca;
+  border-radius: 50%;
+  margin-top: 30px;
+  width: 30px;
+  height: 30px;
+  animation: donut-spin 1.2s linear infinite;
+}
+
+@keyframes donut-spin {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+.arrow-container {
+  width: 25px;
+  /* cubic-bezier-easing = sine / mehr Beispiele: https://easings.net/ */
+  animation: bounce 1600ms infinite cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  cursor: pointer;
+  height: 20px;
+  margin-top: 45px;
+  margin-left: 145px;
+  z-index: 1;
+}
+
+#num_mac {
+  position: relative;
+}
+
+.arrow-down {
+  height: 6px;
+  background: #9f7dca;
+  transform: rotate(45deg);
+  transform-origin: 0% 0%;
+  border-radius: 5px;
+  z-index: 1;
+}
+.arrow-down:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 100%;
+  border-radius: 5px;
+  background: #9f7dca;
+  transform: rotate(-90deg);
+  transform-origin: 0% 100%;
+  z-index: 1;
+}
+
+@keyframes bounce {
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+.magnifyBorder {
+  padding: 18px 36px;
+  border-radius: 61px;
+  box-shadow: inset 0 0 0 2px #be9bc0;
+  /*hsl(243, 80%, 62%);*/
+  transition: 300ms box-shadow cubic-bezier(0.4, 0, 0.6, 1),
+    300ms background-color cubic-bezier(0.4, 0, 0.6, 1),
+    300ms color cubic-bezier(0.4, 0, 0.6, 1);
+}
+
+.progress-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1c2647;
+  margin: 0 0 10px;
+}
+.progress {
+  height: 30px;
+  background: #fff;
+  border-top: 5px solid #1c2647;
+  border-bottom: 5px solid #1c2647;
+  border-radius: 0;
+  margin-bottom: 25px;
+  overflow: visible;
+  position: relative;
+}
+.progress:before,
+.progress:after {
+  content: "";
+  width: 5px;
+  background: #1c2647;
+  position: absolute;
+  top: 0;
+  left: -5px;
+  bottom: 0;
+}
+.progress:after {
+  left: auto;
+  right: -5px;
+}
+.progress .progress-bar {
+  border: none;
+  box-shadow: none;
+  -webkit-animation: 2s linear 0s normal none infinite running
+      progress-bar-stripes,
+    animate-positive 1s;
+  animation: 2s linear 0s normal none infinite running progress-bar-stripes,
+    animate-positive 1s;
+}
+@-webkit-keyframes animate-positive {
+  0% {
+    width: 0;
+  }
+}
+@keyframes animate-positive {
+  0% {
+    width: 0;
+  }
+}
+
+
+/*# sourceMappingURL=styles.css.map*/

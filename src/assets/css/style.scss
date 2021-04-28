@@ -1,0 +1,296 @@
+$color1 : #f5c5c5;
+$color2 : #f0a6a6;
+$color3 : #eb8888;
+$color4 : #e66969;
+
+$color5 : #e3d7e8;
+$color6 : #b799b9;
+$color7 : #9f7dca;
+
+@media (max-width: 426px){
+  html, body{
+    height: 100%;
+    width: 100%;
+  }
+  html {overflow-y: scroll; }
+  body {overflow-y: auto; }
+}
+@media (min-width: 427px){
+  body {width: 426px!important; height: 625px;}
+  html {height: 100%; display: flex; align-items: center; justify-content: center;}
+}
+
+body {margin: 0; font-size: 14px;}
+
+.container { 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page{
+  width: 90%;
+  height: 100%;
+  padding: 0!important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+a {text-decoration: none; color: black;}
+.title {font-size: 24px; margin-bottom: 30px; line-height: 35px;}
+
+.wrapper{
+  text-align: center;
+  padding: 20px 0px;
+  width: 100%;
+}
+
+button:hover { cursor: pointer;}
+.bold {border: 1px solid  #be9bc0!important;}
+.removeAlign {align-items: unset;}
+.half_HL {background: linear-gradient(to top, #e3d7e8 50%, transparent 50%);}
+.half_HL_Y {background: linear-gradient(to top, #FFE400 50%, transparent 50%);}
+
+// 시작 페이지
+
+.start_page{
+  .start_title {font-size: 35px;
+    margin-bottom: 30px;
+    line-height: 50px;
+    font-weight: 100;
+  }
+  #endLetter {position: relative;}
+  .qm{
+    display: inline-block;
+    position: absolute;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .qm1 {    
+    top: 10px;
+    left: 30px;
+    transform: rotate(20deg);
+  }
+  .qm2{
+    left: 45px;
+    top: -15px;
+    transform: rotate(-30deg);
+  }
+  
+  #btn_start {  
+    font-size: 18px; outline: none; 
+    border-radius: 15px;
+    border: 1px solid gray;
+    width: 85%;
+    padding: 20px;
+    background: white;
+  }
+  #start_img {
+    width: 120%;
+    max-width: 250px;
+    margin: 0px;
+  }
+
+
+}
+
+// 질문 페이지
+
+.question_page{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  .question_title {
+    padding: 0px 30px; line-height: 30px;
+    margin-bottom: 60px;
+  }
+
+  .progress_question{
+    #run { // gif
+      width: 30px; height: 40px;
+      position: absolute; 
+      top: 60px;
+    }
+  
+    
+    #heart_wrapper {
+      position: absolute; 
+      top: 70px;
+      right: 7%;
+
+      #heart {
+        position: relative;
+        width: 25px; height: 25px;
+      }
+      #heart:before,
+      #heart:after {
+        position: absolute;
+        content: "";
+        left: 12px;
+        top: 0;
+        width: 12px;
+        height: 20px;
+        background: $color6;
+        border-radius: 20px 20px 0 0;
+        transform: rotate(-45deg);
+        transform-origin: 0 100%;
+      }
+      #heart:after {
+        left: 0;
+        transform: rotate(45deg);
+        transform-origin: 100% 100%;
+      }
+    }
+    
+    #ground {
+      position: absolute; 
+      width: 87%;
+      height: 1.5px;
+      background: black;
+      top: 100px;
+      left: 6%;
+      opacity: 0.6;
+    }
+  }
+
+  .question_btn_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  
+    button {
+      margin-bottom: 15px;
+      border: 1px solid gray;
+      width: 85%;
+      padding: 25px;
+      outline: none;
+      font-size: 15px;
+      border-radius: 15px;
+      background: transparent;
+      color: black;
+    }
+  }
+  
+
+  #p_num {
+    color: darkgray;
+    position: absolute;
+    top: 110px;
+    right: 35px;
+  }
+
+}
+
+.loading_page {
+  display: flex;
+  flex-direction: column;
+}
+
+// 결과
+
+.result_page{
+  display: block;
+  margin: 0 auto;
+  overflow: visible;
+
+  .result{
+    margin-bottom: 10px;
+    padding: 20px;
+  }
+
+  .sub_title{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 30px;
+  }
+
+  .char_result{
+    text-align: center;
+    display: block;
+
+    #type_is { display:block; margin-top: 10px; color: gray; font-size: 13px;}
+    
+    .char_name {
+      display: block;
+      font-weight: bold;
+      margin:0px!important;
+      line-height: 1.1;
+      font-size: 24px;
+    }
+
+    .char_pic {
+      width: 200px;
+      height: 200px;
+      margin: 10px;
+      object-fit: cover;
+    }
+
+    #rank_ment1 {font-size: 15px;
+      #perc {color: $color7; font-size: 20px;}
+    }
+  }
+
+  .ability_result{
+    #after {color: $color7; }
+    .explanation {
+      margin-top: 10px;
+      text-align: left;
+      
+      li {margin-bottom: 10px;}
+    }
+
+    #after_explain {font-size: 17px;};
+
+    .progress_title{
+      text-align: left;
+      font-size: 16px;
+      font-weight: 700;
+    }
+  }
+
+  .tip_result{
+    .ability_tip{
+      text-align: left;
+    }
+  }
+
+  .rank_result{
+    
+    .rank_wrapper{
+      display: flex;
+      
+      #before_me, #after_me {
+        margin: 20px 20px;
+      }
+    }
+  }
+
+  .share_result{
+    .result_btn_wrapper{
+      button {
+        background: transparent;
+        border: 2px solid gray;
+        border-radius: 15px;
+        outline: none;
+        font-size: 14px;
+        font-weight: bold;
+        width: 80%;
+        height: 45px;
+        line-height: 18px;
+        margin: 5px 0;
+      }
+    }
+
+    .share_wrapper {
+      border: 1px solid gray;
+      border-radius: 15px;
+      margin-bottom: 30px;
+    }
+
+  }
+}

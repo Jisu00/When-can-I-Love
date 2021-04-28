@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/assets/css/animation.css" />
+    <link rel="stylesheet" href="/src/assets/css/style.css" />
+    <link rel="stylesheet" href="/src/assets/css/font.css" />
+    <title>나는 언제쯤 연애할 수 있을까?</title>
+  </head>
+  <body class="container">
+    <main class="loading_page page fade_in">
+      <div>당신의 ㅁㅁㅁㅁ를 측정 중입니다..</div>
+      <div class="donutSpinner"></div>
+    </main>
+    <main class="question_page page fade_in">
+      <div class="progress_question">
+        <img id="run" src="../static/images/running.gif">
+        <div id="heart_wrapper"><div id="heart"></div></div>
+        <div id="ground"></div>
+      </div>
+      <div id="p_num"></div>
+      <div class="question_wrapper wrapper">
+        <h2 class="question_title title"></h2>
+        <div class="question_btn_wrapper">
+          <button id="A" class="horizontalOverlay"></button>
+          <button id="B" class="horizontalOverlay"></button>
+        </div>
+      </div>
+    </main>
+
+    <script src="/src/assets/js/question.js"></script>
+  </body>
+</html>

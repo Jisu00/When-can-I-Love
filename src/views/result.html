@@ -1,0 +1,83 @@
+<!DOCTYPE html5>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/assets/css/style.css" />
+    <link rel="stylesheet" href="/src/assets/css/font.css" />
+    <link rel="stylesheet" href="/src/assets/css/progressbar.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <title>나는 언제쯤 연애할 수 있을까?</title>
+  </head>
+  <body class="container">
+    <main class="result_page page fade_in">
+      <div class="result_wrapper wrapper">
+
+        <div class="result1 result char_result"> 
+          <div class="result_server"><%=score%>/<%=ability[0]%>/<%=ability[1]%>/<%=ability[2]%>/<%=ability[3]%></div>   
+          <label id="type_is">나의 솔로탈출 유형은</label>
+          <div class="char_name title">캐릭터의 이름</div>
+          <img class="char_pic" alt="캐릭터 이미지" />
+          <div id="rank_ment1">
+            상위<label id="perc"><%= (index/total*100).toFixed(2) %>%</label
+            >의 능력자
+          </div>
+        </div>
+        <div class="result2 result ability_result">
+          <div class="ability_title sub_title">너님의 능력치</div>
+          <div class="progress_wrapper">
+            <div class="progress_title">철벽력</div>
+            <div class="progress">
+              <div class="progress-bar progress-bar-danger progress-bar-striped" style="width:60%;"></div>
+            </div>
+            <div class="progress_title">탐지력</div>
+            <div class="progress">
+              <div class="progress-bar progress-bar-info progress-bar-striped" style="width:100%;"></div>
+            </div>
+            <div class="progress_title">캐리력</div>
+            <div class="progress">
+              <div class="progress-bar progress-bar-danger progress-bar-striped" style="width:60%;"></div>
+            </div>
+            <div class="progress_title">주체 파악 능력</div>
+            <div class="progress">
+              <div class="progress-bar progress-bar-danger progress-bar-striped" style="width:60%;"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="result3 result tip_result">
+          <div class="tip_title sub_title">솔로 탈출 팁</div>
+          <div class="ability_tip">능력 내용 </div>
+        </div>
+
+        <div class="result4 result rank_result">
+          <div class="rank_wrapper">
+            <div class="before_wrapper">
+              <label id="before_me" class="sub_title">내 앞에 경쟁자</label>
+              <div>추가</div>
+            </div>
+            <div class="after_wrapper">
+              <label id="after_me" class="sub_title">내 뒤에 경쟁자</label>
+              <div>추가</div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="result5 result share_result">
+          <div class="share_title sub_title">공유하기</div>
+          <div class="share_wrapper result">공유</div>
+          <div class="result_btn_wrapper">
+            <button id="other_result">솔로 탈출 순위 구경하기</button>
+            <button id="retest">테스트 다시하기</button>
+
+          </div>
+
+         
+        </div>
+      </div>
+      </div>
+    </main>
+    <script src="/src/assets/js/result.js"></script>
+  </body>
+</html>
