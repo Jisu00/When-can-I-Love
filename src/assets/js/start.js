@@ -1,6 +1,7 @@
 const qm1 = document.querySelector(".qm1");
 const qm2 = document.querySelector(".qm2");
 const btn_start = document.querySelector("#btn_start");
+const btn_start_shadow = document.querySelector("#btn_start_shadow");
 const start_page = document.querySelector(".start_page");
 
 function init() {
@@ -21,7 +22,10 @@ function init() {
 }
 
 if (start_page) {
-  btn_start.addEventListener("click", () => {
+  btn_start.addEventListener("click", (e) => {
+    btn_start_shadow.style.opacity = "0";
+    e.target.style.top = "-10px";
+    e.target.style.left = "37%";
     location.href = "question.html";
   });
 }

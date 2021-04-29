@@ -174,12 +174,12 @@ let quest = {
     "title":
       "썸남/썸녀에게 문자가 왔다.<br><span class='half_HL'>“같이 밥 먹을래요?”</span>",
     "A": {
-      "text": "좋아요! 이곳저곳 맛집을 찾아본다.",
+      "text": "좋아요!\n이곳저곳 맛집을 찾아본다.",
       "type": "AC",
       "score": 1,
     },
     "B": {
-      "text": "그럴까요? 상대방이 먼저 골라주길 기다린다.",
+      "text": "그럴까요?\n상대방이 먼저 골라주길 기다린다.",
       "type": "",
       "score": 0,
     },
@@ -242,6 +242,7 @@ function nextQuestion() {
     location.href = "result.html";
     loading_page.style.display = "flex";
     question_page.style.display = "none";
+    
   } else {
     btn_wrapper.style.opacity = "0";
     question_wrapper.classList.add("fade_in");

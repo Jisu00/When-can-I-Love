@@ -1,0 +1,26 @@
+.link-icon {
+  position: relative;
+  display: inline-block;
+  width: auto;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  margin-right: 20px;
+  padding-top: 50px;
+}
+.link-icon.twitter {
+  background-image: url("../../static/images/icon-twitter.png");
+  background-repeat: no-repeat;
+}
+.link-icon.facebook {
+  background-image: url("../../static/images/icon-facebook.png");
+  background-repeat: no-repeat;
+}
+.link-icon.kakao {
+  background-image: url("../../static/images/icon-kakao.png");
+  background-repeat: no-repeat;
+}
+.link-icon.link {
+  background-image: url("../../static/images/icon-link.png");
+  background-repeat: no-repeat;
+}
