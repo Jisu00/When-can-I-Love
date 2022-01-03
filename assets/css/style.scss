@@ -61,18 +61,22 @@ button:hover { cursor: pointer;}
     line-height: 50px;
     font-weight: 100;
   }
+
   #endLetter {position: relative;}
+
   .qm{
     display: inline-block;
     position: absolute;
     font-size: 30px;
     font-weight: bold;
   }
+
   .qm1 {    
     top: 10px;
     left: 30px;
     transform: rotate(20deg);
   }
+  
   .qm2{
     left: 45px;
     top: -15px;
@@ -82,13 +86,12 @@ button:hover { cursor: pointer;}
   #btn_start {  
     font-size: 15px;
   }
+
   #start_img {
     width: 120%;
     max-width: 250px;
     margin: 0px;
   }
-
-
 }
 
 // 질문 페이지
@@ -192,83 +195,186 @@ button:hover { cursor: pointer;}
   margin: 0 auto;
   overflow: visible;
 
-  .result{
+  #type_is { display:block; margin-top: 10px; color: gray; font-size: 13px;}
+  
+  .result_title {
+    display: block;
+    font-weight: default;
+    margin:0px!important;
+    line-height: 1.1;
+    font-size: 24px;
+  }
+  .result {
     margin-bottom: 10px;
     padding: 20px;
-  }
 
-  .sub_title{
-    font-size: 20px;
-    font-weight: bold;
-    text-align: left;
-    margin-bottom: 30px;
-  }
-
-  .char_result{
-    text-align: center;
-    display: block;
-
-    #type_is { display:block; margin-top: 10px; color: gray; font-size: 13px;}
-    
-    .char_name {
-      display: block;
-      font-weight: bold;
-      margin:0px!important;
-      line-height: 1.1;
-      font-size: 24px;
-    }
-
-    .char_pic {
+    img {
       width: 200px;
       height: 200px;
-      margin: 20px 10px;
+      margin: 10px;
       object-fit: cover;
     }
-
-    #rank_ment1 {font-size: 15px;
-      #perc {color: $color7; font-size: 20px;}
-    }
   }
 
-  .ability_result{
-    #after {color: $color7; }
-    .explanation {
-      margin-top: 10px;
-      text-align: left;
-      
-      li {margin-bottom: 10px;}
-    }
 
-    #after_explain {font-size: 17px;};
+  .machine_wrapper{ // 기계
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 95%;
 
-    .progress_title{
-      text-align: left;
+    #click_me {
       font-size: 16px;
-      font-weight: 700;
+      position: absolute;
+      right: 10px;
+      top: 145px;
+      font-weight: bold
     }
-  }
 
-  .tip_result{
-    .ability_tip{
-      text-align: left;
-    }
-  }
-
-  .rank_result{
-    
-    .rank_wrapper{
+    #machine {
       display: flex;
-      justify-content: space-between;
-      #before_me, #after_me {
-        font-size: 16px;
+      position: relative;
+      width: 250px; 
+      height: 250px;
+      border: 3px solid darkgray;
+      background: #f5f6fa;
+      border-radius: 20px;
+      margin-bottom: 20px;
+      align-items: center;
+      flex-direction: column;
+  
+
+      #machine_display{
+        width: 200px;
+        height: 100px;
+        border: 15px solid gray;
+        background: #dfe6e9;
+        border-radius: 10px;
+        line-height: 100px;
+        font-family: "Gothic";
+        font-weight: bold;
         text-align: center;
-        margin: 10px;
+        font-size: 18px;
+        margin-top: 10px;
+      }
+
+       #num_display{
+        width: 90px;
+        height: 45px;
+        position: absolute;
+        top: 190px;
+        left: 15px;
+        background: black;
+        border-radius: 3px;
+        line-height: 45px;
+        text-align: center;
+
+        label {
+          display: block;
+          color: greenyellow;
+          font-size: 40px;
+          letter-spacing: 5px;
+          margin: 0px;
+          margin-left: 5px;
+        }
+      }
+
+      #machine_btn {
+        position: absolute;
+        top: 190px;
+        right: 20px;
+        width: 60px;
+        height: 40px;
+        background-color: #efefef;
+        border : 1px solid gray;
+        border-radius: 5px;
+      }
+
+      #number_ticket {
+        position: absolute;
+        top: 120px;
+        width: 100px;
+        height: 120px;
+        border: 1px solid black;
+        background: #fafafa;
+        z-index: -1;
       }
     }
   }
 
-  .share_result{
-    .result_btn_wrapper{
+  .result_wrapper {
+    text-align: center;
+    margin-top: 20px;
+
+    .waitingNum_wrapper{
+      text-align: center;
+      display: block;
+  
+      #num_is {font-size: 21px; margin-top: 10px; margin-bottom: -10px;}
+  
+      .rank_explain{
+        #rank_ment1 {font-size: 17px; margin-bottom: 10px; margin-top: 20px;}
+        #rank_ment2 {
+          font-size: 15px;
+
+          #perc {color: $color7;}
+        }
+      }
+      
+      .num_paper{
+        width: 210px;
+        height: 260px;
+        border: 2px solid black;
+        margin: 30px auto;
+        background-color: #fafafa;
+  
+        #bold_line {
+          width: 180px;
+          height: 4px;
+          background: black;
+          margin-top: 50px;
+          margin-bottom: 10px;
+          margin-left: 14px;
+        }
+  
+        #wait_letter {font-size: 20px;}
+        #wait_num {font-size: 50px; margin-bottom: 10px; font-weight: bold; }
+  
+        #line {
+          width: 180px;
+          height: 2px;
+          background: black;
+          margin-bottom: 10px;
+          margin-left: 14px;
+        }
+  
+        #now_is{
+          font-size: 16px;
+          #now{
+            color: red;
+            font-weight: bold;
+            font-size: 18px;
+          }
+        }
+      }
+        
+    }
+  
+    .character_wrapper{
+      #after {color: $color7;}
+      .explanation {
+        margin-top: 10px;
+        text-align: left;
+        
+        li {margin-bottom: 10px;}
+      }
+  
+      #after_explain {font-size: 17px;};
+    }
+  
+    .share_wrapper{
       button {
         background: transparent;
         border: 2px solid gray;
@@ -276,18 +382,17 @@ button:hover { cursor: pointer;}
         outline: none;
         font-size: 14px;
         font-weight: bold;
-        width: 80%;
-        height: 45px;
+        width: 40%;
+        height: 35px;
         line-height: 18px;
-        margin: 5px 0;
+      }
+      #store {margin-right: 15px;}
+  
+      .share {
+        border: 1px solid gray;
+        border-radius: 15px;
+        margin-top: 30px;
       }
     }
-
-    .share_wrapper {
-      border: 1px solid gray;
-      border-radius: 15px;
-      margin-bottom: 30px;
-    }
-
   }
 }

@@ -15,11 +15,14 @@ let page_num = 1,
   heart_opa = 5;
 
 let finalResult = {
-  "CA": 0,
-  "PO": 0,
-  "AC": 0,
-  "AW": 0,
-  "SCORE": 0,
+  "TYPE" : {
+    "E" : 0, "I" : 0,
+    "S" : 0, "N" : 0,
+    "T" : 0, "F" : 0,
+    "J" : 0, "P" : 0
+  },
+  "RESULT": "",
+  "SCORE": 0
 };
 
 let quest = {
@@ -27,12 +30,12 @@ let quest = {
     "title": "한껏 꾸민 날,<br><span class='half_HL'>번호를 따였다.</span>",
     "A": {
       "text": "누구세요?",
-      "type": "",
+      "type": "I",
       "score": 0,
     },
     "B": {
       "text": "괜찮은데? 번호를 준다.",
-      "type": "CA",
+      "type": "E",
       "score": 1,
     },
   },
@@ -41,12 +44,12 @@ let quest = {
       "<span class='half_HL'>재미있어 보이는 대화</span>를<br>하는 무리에 나는",
     "A": {
       "text": "끼어든다.",
-      "type": "PO",
+      "type": "E",
       "score": 1,
     },
     "B": {
       "text": "관심 없다.",
-      "type": "",
+      "type": "I",
       "score": -1,
     },
   },
@@ -55,33 +58,33 @@ let quest = {
       "썸남/썸녀와의 대화 도중<br><span class='half_HL'>어색한 침묵</span>이 흐른다. ",
     "A": {
       "text": "펜트 하우스 보셨어요?",
-      "type": "AC",
+      "type": "F",
       "score": 1,
     },
     "B": {
       "text": "차분히 기다린다.",
-      "type": "",
+      "type": "T",
       "score": 0,
     },
   },
   4: {
-    "title": "솔직히 <span class='half_HL'>주변을 둘러보면</span>",
-    "A": {
-      "text": "괜찮은 사람이 없다😟",
-      "type": "",
-      "score": -1,
-    },
-    "B": {
-      "text": "가끔식 눈길이 가는 사람이 있다.",
-      "type": "",
-      "score": 1,
-    },
+    "title": "썸남/썸녀에게 문자가 왔다.<br><span class='half_HL'>“같이 밥 먹을래요?”</span>", 
+      "A": {
+        "text" : "언제 만날까요? 어디서 볼까요?",
+        "type" : "J",
+        "score" : 0
+      }, 
+      "B": {
+        "text" : "좋아요! 장소나 시간은 당일에!",
+        "type" : "P",
+        "score" : 0
+      }
   },
   5: {
     "title": "<span class='half_HL'>소개팅</span>이 들어왔다.",
     "A": {
       "text": "누군데? 이것저것 물어본다.",
-      "type": "PO",
+      "type": "",
       "score": 1,
     },
     "B": {
@@ -91,15 +94,15 @@ let quest = {
     },
   },
   6: {
-    "title": "썸인지 아닌지 <br><span class='half_HL'>햇갈리면 나는</span>,",
+    "title": "그 사람은 나를<br><span class='half_HL'>좋아하지 않는 것 같다면,</span>",
     "A": {
       "text": "포기한다😂",
-      "type": "",
+      "type": "T",
       "score": 0,
     },
     "B": {
       "text": "좀 더 다가간다🤭",
-      "type": "AC",
+      "type": "F",
       "score": 1,
     },
   },
@@ -108,12 +111,12 @@ let quest = {
       "평소 관심 있던 사람이<br><span class='half_HL'>술을 마시자고 한다</span>.",
     "A": {
       "text": "기회다🤩\n같이 마셔요!",
-      "type": "",
+      "type": "E",
       "score": 1,
     },
     "B": {
       "text": "밥은 어때요?\n천천히 알아가고 싶다.",
-      "type": "CA",
+      "type": "I",
       "score": 0,
     },
   },
@@ -135,12 +138,12 @@ let quest = {
     "title": "<span class='half_HL'>이상형</span>을 발견했을 때<br>나는",
     "A": {
       "text": "모 아니면 도!\n적극적으로 들이댄다.",
-      "type": "",
+      "type": "E",
       "score": 1,
     },
     "B": {
       "text": "스며드는 게 대세!\n주변을 맴돈다.",
-      "type": "CA",
+      "type": "I",
       "score": 0,
     },
   },
@@ -153,34 +156,34 @@ let quest = {
     },
     "B": {
       "text": "쟤 누구야?",
-      "type": "PO",
+      "type": "",
       "score": 1,
     },
   },
   11: {
-    "title": "이상형을 말하면<br><span class='half_HL'>친구들은 나에게</span><br>",
+    "title": "<span class='half_HL'>“오늘 데이트 어땠어?”</span><br>라는 질문에 나는", 
     "A": {
-      "text": "“야 너 눈이 너무 낮은거 아니야? ”",
-      "type": "AW",
-      "score": 1,
-    },
+      "text" : "“이 조명, 온도, 습도...\n모든 게 좋았어...”",
+      "type" : "N",
+      "score" : 0
+    }, 
     "B": {
-      "text": "“제발 주제파악좀 해ㅠㅠ”",
-      "type": "",
-      "score": 0,
-    },
+      "text" : "“저녁은 진짜 맛있었고,\n영화도 재밌었고...”",
+      "type" : "S",
+      "score" : 0
+    }
   },
   12: {
     "title":
       "썸남/썸녀에게 문자가 왔다.<br><span class='half_HL'>“같이 밥 먹을래요?”</span>",
     "A": {
       "text": "좋아요!\n이곳저곳 맛집을 찾아본다.",
-      "type": "AC",
+      "type": "J",
       "score": 1,
     },
     "B": {
-      "text": "그럴까요?\n상대방이 먼저 골라주길 기다린다.",
-      "type": "",
+      "text": "그럴까요?\n그 때 땡기는 걸로 먹어요!",
+      "type": "P",
       "score": 0,
     },
   },
@@ -197,9 +200,11 @@ function clickFunction(e) {
   A.disabled = "true";
   B.disabled = "true";
 
+  if (idValue == "") return;
+
   let typeResult = quest[page_num][idValue]["type"];
 
-  if (typeResult != null) finalResult[typeResult] += 1;
+  finalResult["TYPE"][typeResult] += 1;
   finalResult["SCORE"] += quest[page_num][idValue]["score"];
 
   setTimeout(() => {
@@ -207,6 +212,7 @@ function clickFunction(e) {
   }, 100);
 
   e.target.classList.add("magnifyBorder");
+
   setTimeout(() => {
     e.target.classList.remove("magnifyBorder");
     e.target.classList.remove("bold");
@@ -219,30 +225,12 @@ function clickFunction(e) {
   }, 500);
 }
 
-/*function post_to_url(path, params, method) {
-  method = method || "post";
-  const form = document.createElement("form");
-  form.setAttribute("method", method);
-  form.setAttribute("action", path);
-  for (const key in params) {
-    const hiddenField = document.createElement("input");
-    hiddenField.setAttribute("type", "hidden");
-    hiddenField.setAttribute("name", key);
-    hiddenField.setAttribute("value", params[key]);
-    form.appendChild(hiddenField);
-  }
-  document.body.appendChild(form);
-  form.submit();
-}*/
-
 function nextQuestion() {
   if (page_num == 13) {
-    //post_to_url("/loading", finalResult);
-
-    location.href = "result.html";
     loading_page.style.display = "flex";
     question_page.style.display = "none";
-    
+
+    checkTypeAndSend();
   } else {
     btn_wrapper.style.opacity = "0";
     question_wrapper.classList.add("fade_in");
@@ -267,6 +255,17 @@ function nextQuestion() {
     run_img.style.left = `${(run_pos += (ground.clientWidth - 33) / 12)}px`;
     heart_img.style.opacity = `${(heart_opa += 6)}%`;
   }
+}
+
+function checkTypeAndSend(){
+  let text = "";
+
+  finalResult["TYPE"]["I"] > finalResult["TYPE"]["E"] ? text += "I" : text += "E";
+  finalResult["TYPE"]["S"] > finalResult["TYPE"]["N"] ? text += "S" : text += "N";
+  finalResult["TYPE"]["T"] > finalResult["TYPE"]["F"] ? text += "T" : text += "F";
+  finalResult["TYPE"]["J"] > finalResult["TYPE"]["P"] ? text += "J" : text += "P";
+
+  location.href = "../views/result.html?" + text + "/" + finalResult["SCORE"];
 }
 
 function init() {

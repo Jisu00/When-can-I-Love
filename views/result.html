@@ -1,0 +1,71 @@
+<!DOCTYPE html5>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/animation.css">
+  <link rel="stylesheet" href="../assets/css/font.css">
+  <title>언제쯤 연애할 수 있을까?</title>
+</head>
+<body class="container">
+  <main class="result_page page fade_in">
+
+    <div class="machine_wrapper">
+      <div id="machine">
+        <div id="machine_display">순번 대기 시스템</div>
+        <div id="click_me" class="half_HL_Y">눌러보세요!</div>
+        <div class="arrow-container">
+          <div class="arrow-down"></div>
+        </div>
+        <div id="num_display"><label>888</label></div>
+        <button id="machine_btn"></button>
+        <div id="number_ticket"></div>
+      </div>
+    </div>
+
+    <div class="result_wrapper">
+      <div class="result waitingNum_wrapper">
+        <div class="character">
+          <div id="num_is">나의 대기 번호는?</div>
+        </div>
+        <div class="num_paper">
+          <div id="bold_line"></div>
+          <div id="wait_letter" style="font-family:'Gothic'; font-weight: bold;">대기번호</div>
+          <div id="wait_num">123412</div>
+          <div id="line"></div>
+          <div id="now_is" style="font-family:'Gothic'">현재 대기 인원<br><label id="now">12312312</label>팀</div>
+        </div>
+        <div class="rank_explain">
+          <div id="rank_ment1">"마음만 먹으면 당장 연애하겠는데요?"</div>
+          <div id="rank_ment2">당신은 전체 참여자 <label id="par">100명</label> 중,<br>상위 <label id="perc">12.9%</label>입니다.</div>
+        </div>
+      </div>   
+      
+      <div class="result character_wrapper">
+        <label id="type_is">나의 연애 자아는</label>
+        <div class="result_title title">캐릭터의 이름</div>
+        <img src="../static/images/Avocado_Fitness.png" alt="캐릭터 이미지">
+        <div id="after_explain" style="font-size: 16px; margin-bottom: 30px;" >당신은 약 <label id="after"></label>에 연애할 수 있습니다.</div>
+        <div class="explanation">
+          <li id="ex_1"></li> 
+          <li id="ex_2"></li>
+          <li id="ex_3"></li>
+          <li id="ex_4"></li>
+        </div>
+      </div>
+      
+      <div class="result share_wrapper">
+        <button id="store">다른 버튼</button>
+        <button id="retest">테스트 다시</button>
+        <div class="share result">
+          공유
+        </div>
+      </div>
+      
+  </main>
+  <script src="../assets/js/result.js"></script>
+  <script src="../assets/js/value.js"></script>
+</body>
+</html>

@@ -1,4 +1,16 @@
-@charset "UTF-8";
+$font4 : 'IBMPlexSansKR-Regular'; // fix
+$font4-1 : 'IBMPlexSansKR-SemiBold'; // fix
+$font4-2 : 'IBMPlexSansKR-Bold'; // fix
+$font5 : 'LAB디지털'; // fix
+$font6 : 'S-CoreDream-3Light'; // fix
+$font6-1 : 'S-CoreDream-4Regular';
+$font6-2 : 'S-CoreDream-5Medium';
+$font7 : 'Goyang';
+$font8 : 'NanumSquareRound';
+$font11 : 'HangeulNuri-Bold'; // fix
+$font13 : 'KyoboHand'; //
+$font14 : 'NanumBarunpen'; //
+
 @font-face {
   font-family: "RIDIBatang";
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/RIDIBatang.woff") format("woff");
@@ -85,86 +97,40 @@
 
 @font-face {
   font-family: 'NanumBarunpen';
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumBarunpen.woff") format("woff");
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumBarunpen.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Goyang';
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Goyang.woff") format("woff");
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Goyang.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'NanumSquareRound';
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff") format("woff");
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
-button {
-  font-family: "S-CoreDream-3Light";
-}
+button{font-family: $font6;}
+.container{font-family: $font4;}
+.bold {font-family: $font6-1;}
+.start_title{font-family: $font8;}
+#btn_start{font-family: $font6-1;}
+.question_title{font-family: $font14;}
+.result_title{font-family: $font4-1;}
+#num_display label{font-family: $font5;}
+#par {font-family: $font4-2;}
+#perc {font-family: $font4-2;}
+#wait_num{font-family: $font11;}
+#now{font-family: $font11;}
+#after{font-family: $font4-1;}
+#after_explain{font-family: $font4-2;}
+#num_is{font-family: $font4-1;}
+#rank_ment1{font-family: $font4-1;}
 
-.container {
-  font-family: "IBMPlexSansKR-Regular";
-}
-
-.bold {
-  font-family: "S-CoreDream-4Regular";
-}
-
-.start_title {
-  font-family: "NanumSquareRound";
-}
-
-#btn_start {
-  font-family: "S-CoreDream-4Regular";
-}
-
-.question_title {
-  font-family: "NanumBarunpen";
-}
-
-.result_title {
-  font-family: "IBMPlexSansKR-SemiBold";
-}
-
-.rank label {
-  font-family: "LAB디지털";
-}
-
-#par {
-  font-family: "IBMPlexSansKR-Bold";
-}
-
-#perc {
-  font-family: "IBMPlexSansKR-Bold";
-}
-
-#wait_num {
-  font-family: "HangeulNuri-Bold";
-}
-
-#now {
-  font-family: "HangeulNuri-Bold";
-}
-
-#after {
-  font-family: "IBMPlexSansKR-SemiBold";
-}
-
-#after_explain {
-  font-family: "IBMPlexSansKR-Bold";
-}
-
-#num_is {
-  font-family: "IBMPlexSansKR-SemiBold";
-}
-
-#rank_ment1 {
-  font-family: "IBMPlexSansKR-SemiBold";
-}
 /*# sourceMappingURL=font.css.map */

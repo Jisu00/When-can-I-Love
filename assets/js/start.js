@@ -23,9 +23,7 @@ function init() {
 
 if (start_page) {
   btn_start.addEventListener("click", (e) => {
-    btn_start_shadow.style.opacity = "0";
-    e.target.style.top = "-8px";
-    e.target.style.left = "36.5%";
+    e.target.style.top = "-6px";
     e.target.style.transition = "all 0.3s";
 
     setInterval(()=>{
