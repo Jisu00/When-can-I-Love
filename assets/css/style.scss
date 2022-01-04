@@ -315,12 +315,7 @@ button:hover { cursor: pointer;}
       #num_is {font-size: 21px; margin-top: 10px; margin-bottom: -10px;}
   
       .rank_explain{
-        #rank_ment1 {font-size: 17px; margin-bottom: 10px; margin-top: 20px;}
-        #rank_ment2 {
-          font-size: 15px;
-
-          #perc {color: $color7;}
-        }
+        #rank_ment {font-size: 17px; margin-bottom: 10px; margin-top: 20px;}
       }
       
       .num_paper{
@@ -362,13 +357,11 @@ button:hover { cursor: pointer;}
         
     }
   
-    .character_wrapper{
+    .explanation_wrapper{
       #after {color: $color7;}
       .explanation {
         margin-top: 10px;
         text-align: left;
-        
-        li {margin-bottom: 10px;}
       }
   
       #after_explain {font-size: 17px;};
