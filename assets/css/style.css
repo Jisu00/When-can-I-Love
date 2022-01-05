@@ -500,7 +500,9 @@ button:hover {
 .result_page .result_wrapper .explanation_wrapper .explanation {
   margin-top: 10px;
   text-align: left;
-  padding: 10px;
+  padding: 0 10px;
+  padding-top: 15px;
+  padding-bottom: 5px;
   border-radius: 10px;
   background: #f4eef6;
 }
@@ -535,25 +537,22 @@ button:hover {
 }
 
 .result_page .result_wrapper .share_wrapper .link_icon.twitter {
-  background-image: url(/static/icon/icon-twitter.png);
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .result_page .result_wrapper .share_wrapper .link_icon.facebook {
-  background-image: url(/static/icon/icon-facebook.png);
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .result_page .result_wrapper .share_wrapper .link_icon.kakao {
-  background-image: url(/static/icon/icon-kakao.png);
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .result_page .result_wrapper .share_wrapper .share {
-  border: 1px solid gray;
+  border: 3px solid #b799b9;
   border-radius: 15px;
   margin-top: 30px;
 }

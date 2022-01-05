@@ -394,7 +394,9 @@ button:hover { cursor: pointer;}
       .explanation {
         margin-top: 10px;
         text-align: left;
-        padding: 10px;
+        padding: 0 10px;
+        padding-top: 15px;
+        padding-bottom: 5px;
         border-radius: 10px;
         background: #f4eef6;
       }
@@ -427,13 +429,13 @@ button:hover { cursor: pointer;}
         cursor: pointer;
       }
       
-      .link_icon.twitter { background-image: url(/static/icon/icon-twitter.png);background-repeat: no-repeat; background-position: center;}
-      .link_icon.facebook { background-image: url(/static/icon/icon-facebook.png); background-repeat: no-repeat; background-position: center;} 
-      .link_icon.kakao { background-image: url(/static/icon/icon-kakao.png); background-repeat: no-repeat; background-position: center;}
+      .link_icon.twitter { background-repeat: no-repeat; background-position: center;}
+      .link_icon.facebook {  background-repeat: no-repeat; background-position: center;} 
+      .link_icon.kakao {  background-repeat: no-repeat; background-position: center;}
       
   
       .share {
-        border: 1px solid gray;
+        border: 3px solid $color6;
         border-radius: 15px;
         margin-top: 30px;
       }
