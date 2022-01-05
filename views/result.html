@@ -57,15 +57,16 @@
       <div class="result share_wrapper">
         <button id="retest">테스트 다시</button>
         <div class="share result">
-          <a id="btn_twitter" class="link_icon twitter"
-            style="background-image: url(/static/icon/icon-twitter.png);"
-          >트위터</a>
-          <a id="btn_facebook" class="link_icon facebook"
-            style="background-image: url(/static/icon/icon-facebook.png);"
-          >페이스북</a>
-          <a id="btn_kakao" class="link_icon kakao" href="javascript:kakaoShare()"
-            style="background-image: url(/static/icon/icon-kakao.png);"
-          >카카오톡</a>
+          <a id="btn_twitter" class="link_icon twitter">
+            <img class="img_icon" src="../static/icon/icon-twitter.png"/>
+            트위터
+          </a>
+          <a id="btn_facebook" class="link_icon facebook">
+            <img class="img_icon" src="../static/icon/icon-facebook.png"/>
+          페이스북</a>
+          <a id="btn_kakao" class="link_icon kakao" href="javascript:kakaoShare()">
+            <img class="img_icon" src="../static/icon/icon-kakao.png"/>
+          카카오톡</a>
         </div>
       </div>
       
@@ -99,7 +100,7 @@
             },
           },
         ],
-        // 카카오톡 미설치 시 카카오톡 설치 경로이동
+
         installTalk: true,
       })
     }
