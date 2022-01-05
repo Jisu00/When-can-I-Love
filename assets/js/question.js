@@ -36,7 +36,7 @@ let quest = {
     "B": {
       "text": "괜찮은데? 번호를 준다.",
       "type": "E",
-      "score": 1,
+      "score": 2,
     },
   },
   2: {
@@ -50,7 +50,7 @@ let quest = {
     "B": {
       "text": "관심 없다.",
       "type": "I",
-      "score": -1,
+      "score": 0,
     },
   },
   3: {
@@ -72,7 +72,7 @@ let quest = {
       "A": {
         "text" : "언제 만날까요? 어디서 볼까요?",
         "type" : "J",
-        "score" : 0
+        "score" : 1
       }, 
       "B": {
         "text" : "좋아요! 장소나 시간은 당일에!",
@@ -85,12 +85,12 @@ let quest = {
     "A": {
       "text": "누군데? 이것저것 물어본다.",
       "type": "",
-      "score": 1,
+      "score": 2,
     },
     "B": {
       "text": "나 자만추인거 몰라?😒",
       "type": "",
-      "score": -1,
+      "score": 0,
     },
   },
   6: {
@@ -103,7 +103,7 @@ let quest = {
     "B": {
       "text": "좀 더 다가간다🤭",
       "type": "F",
-      "score": 1,
+      "score": 2,
     },
   },
   7: {
@@ -112,7 +112,7 @@ let quest = {
     "A": {
       "text": "기회다🤩\n같이 마셔요!",
       "type": "E",
-      "score": 1,
+      "score": 0,
     },
     "B": {
       "text": "밥은 어때요?\n천천히 알아가고 싶다.",
@@ -130,7 +130,7 @@ let quest = {
     },
     "B": {
       "text": "나를 그렇게 좋아한다는데..😥",
-      "type": "AW",
+      "type": "",
       "score": 1,
     },
   },
@@ -152,12 +152,12 @@ let quest = {
     "A": {
       "text": "별 관심없다.",
       "type": "",
-      "score": -1,
+      "score": 0,
     },
     "B": {
       "text": "쟤 누구야?",
       "type": "",
-      "score": 1,
+      "score": 2,
     },
   },
   11: {

@@ -35,27 +35,68 @@
           <div id="wait_letter" style="font-family:'Gothic'; font-weight: bold;">대기번호</div>
           <div id="wait_num">123412</div>
           <div id="line"></div>
-          <div id="now_is" style="font-family:'Gothic'">현재 대기 인원<br><label id="now">123123123</label>팀</div>
+          <div id="current" style="font-family:'Gothic'">
+            현재 대기 인원<br>
+            <label id="current_num">529921</label>팀
+          </div>
         </div>
         <div class="rank_explain">
-          <div id="rank_ment">"마음만 먹으면 당장 연애하겠는데요?"</div>
+          <label class="quotation_mark" id="quotation_mark1">"</label>
+          <div id="rank_ment"></div>
+          <label class="quotation_mark" id="quotation_mark2">"</label>
+        </div>
+        <div id="after_explain" style="font-size: 16px; margin-bottom: 30px;" >
+          당신은 약 <label id="after"></label>에 연애할 수 있습니다.
         </div>
       </div>   
       
       <div class="result explanation_wrapper">
-        <div id="after_explain" style="font-size: 16px; margin-bottom: 30px;" >당신은 약 <label id="after"></label>에 연애할 수 있습니다.</div>
         <div class="explanation" style="text-align: left;"></div>
       </div>
       
       <div class="result share_wrapper">
         <button id="retest">테스트 다시</button>
         <div class="share result">
-          공유
+          <a id="btn_twitter" class="link_icon twitter">트위터</a>
+          <a id="btn_facebook" class="link_icon facebook">페이스북</a>
+          <a id="btn_kakao" class="link_icon kakao" href="javascript:kakaoShare()">카카오톡</a>
         </div>
       </div>
       
   </main>
   <script src="../assets/js/result.js"></script>
   <script src="../assets/js/value.js"></script>
+  <script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
+  <script src="../assets/js/linkIcon.js"></script>
+  <script type="text/javascript">
+    Kakao.init('a8564436db1bb3eae2ee035a41a9ed3d');
+    console.log(Kakao.isInitialized());
+  
+    function kakaoShare() {
+      Kakao.Link.sendDefault({
+        objectType: 'feed',
+        content: {
+          title: '언제쯤 연애할 수 있을까?',
+          description: 'ヾ(•ω•`)o',
+          imageUrl: 'https://jisu00.github.io/MBTI-When_can_I_Love/static/images/cry.gif',
+          link: {
+            mobileWebUrl: 'https://jisu00.github.io/MBTI-When_can_I_Love/views/start.html',
+            webUrl: 'https://jisu00.github.io/MBTI-When_can_I_Love/views/start.html',
+          },
+        },
+        buttons: [
+          {
+            title: '웹으로 보기',
+            link: {
+              mobileWebUrl: 'https://jisu00.github.io/MBTI-When_can_I_Love/views/start.html',
+              webUrl: 'https://jisu00.github.io/MBTI-When_can_I_Love/views/start.html',
+            },
+          },
+        ],
+        // 카카오톡 미설치 시 카카오톡 설치 경로이동
+        installTalk: true,
+      })
+    }
+  </script>
 </body>
 </html>

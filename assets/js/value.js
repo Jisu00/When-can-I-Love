@@ -1,12 +1,22 @@
 const TYPE = document.querySelector("#TYPE"),
   SCORE = document.querySelector("#SCORE"),
-  rank_ment = document.querySelector("#rank_ment1"),
+  rank_ment = document.querySelector("#rank_ment"),
   result_page = document.querySelector(".result_page"),
   explanation = document.querySelector(".explanation"),
-  wait_num = document.querySelector("#wait_num");
+  wait = document.querySelector("#wait_num"),
+  after_explain = document.querySelector("#after_explain"),
+  after = document.querySelector("#after");
 
 
-const TEXT = {
+const SCORETEXT = {
+  1: "마음만 먹으면 당장 연애 하겠는데요?",
+  2: "주변을 잘 살펴보면 이미 좋은 사람이 있을지도 몰라요!",
+  3: "조금만 노력하면 금방 만날 수 있겠어요!",
+  4: "조금 더 적극적으로 인연을 찾아볼까요?",
+  5: "새로운 사람을 만날 준비가 조금 필요하겠네요"
+}
+
+const MBTITEXT = {
   "ISTP" : {
     1: "마음과 다르게 애정이 서툰 편이시군요!",
     2: "연애를 하면서도 관계에 대한 불안함을 늘 가지고 있는 편입니다",
@@ -107,20 +117,66 @@ const TEXT = {
   }
 }
 
+
+function randomValue(min, max){
+  return Math.floor(Math.random() * (max - min) + min);
+}
+
 function fillExplanation(type) {
   let exText = "";
 
-  for (let i=1; i<=Object.keys(TEXT[type]).length; i++) {
+  for (let i=1; i<=Object.keys(MBTITEXT[type]).length; i++) {
     exText += `<li 
                   style="margin-bottom: 10px; 
                   list-style-position: inside;
                   text-indent: -20px;
                   padding-left: 20px;">
-                  ${TEXT[type][i]}
+                  ${MBTITEXT[type][i]}
                 </li>`;
   }
 
   explanation.innerHTML = exText;
+}
+
+function fillScoreText(score) {
+  let date_num;
+  let wait_num;
+  let ment_num;
+
+  if (score >= 13){
+    ment_num = 1;
+    date_num = randomValue(1, 7);
+    wait_num = randomValue(1, 1000);
+    text = `${date_num}일 뒤`;
+  }
+  else if (score >= 10){
+    ment_num = 2;
+    text = "한 달 이내";
+    wait_num = randomValue(1001, 5000);
+  }
+  else if (score >= 7){
+    ment_num = 3;
+    date_num = randomValue(3, 12);
+    wait_num = randomValue(5001, 20000);
+    text = `${date_num}개월 뒤`;
+  }
+  else if (score >= 3){
+    ment_num = 4;
+    date_num = randomValue(1, 5);
+    wait_num = randomValue(20001, 40000);
+    text = `${date_num}년 뒤`;
+  }
+  else{
+    ment_num = 5;
+    text = "측정불가";
+    after_explain.innerText = "연애 시작일 측정불가";
+    after_explain.style.color = "red";
+    wait_num = randomValue(40001, 529921);
+  }
+
+  wait.innerText = wait_num;
+  rank_ment.innerText = SCORETEXT[ment_num];
+  after.innerText = text;
 }
 
 function init() {
@@ -130,6 +186,7 @@ function init() {
   score = data[1];
 
   fillExplanation(type);
+  fillScoreText(score);
 }
 
 if (result_page) {

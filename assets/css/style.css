@@ -410,18 +410,34 @@ button:hover {
   margin-bottom: -10px;
 }
 
-.result_page .result_wrapper .waitingNum_wrapper .rank_explain #rank_ment1 {
-  font-size: 17px;
+.result_page .result_wrapper .waitingNum_wrapper .rank_explain {
+  position: relative;
+}
+
+.result_page .result_wrapper .waitingNum_wrapper .rank_explain #rank_ment {
+  font-size: 15px;
   margin-bottom: 10px;
   margin-top: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding: 0 15px;
 }
 
-.result_page .result_wrapper .waitingNum_wrapper .rank_explain #rank_ment2 {
-  font-size: 15px;
+.result_page .result_wrapper .waitingNum_wrapper .rank_explain .quotation_mark {
+  position: absolute;
+  font-size: 28px;
+  font-weight: bold;
+  color: #444444;
+  top: -10px;
 }
 
-.result_page .result_wrapper .waitingNum_wrapper .rank_explain #rank_ment2 #perc {
-  color: #9f7dca;
+.result_page .result_wrapper .waitingNum_wrapper .rank_explain #quotation_mark1 {
+  left: 0px;
+}
+
+.result_page .result_wrapper .waitingNum_wrapper .rank_explain #quotation_mark2 {
+  right: 0px;
 }
 
 .result_page .result_wrapper .waitingNum_wrapper .num_paper {
@@ -459,47 +475,81 @@ button:hover {
   margin-left: 14px;
 }
 
-.result_page .result_wrapper .waitingNum_wrapper .num_paper #now_is {
+.result_page .result_wrapper .waitingNum_wrapper .num_paper #current {
   font-size: 16px;
 }
 
-.result_page .result_wrapper .waitingNum_wrapper .num_paper #now_is #now {
+.result_page .result_wrapper .waitingNum_wrapper .num_paper #current #current_num {
   color: red;
   font-weight: bold;
   font-size: 18px;
 }
 
-.result_page .result_wrapper .character_wrapper #after {
+.result_page .result_wrapper .waitingNum_wrapper #after {
   color: #9f7dca;
 }
 
-.result_page .result_wrapper .character_wrapper .explanation {
+.result_page .result_wrapper .waitingNum_wrapper #after_explain {
+  font-size: 18px;
+}
+
+.result_page .result_wrapper .explanation_wrapper {
+  margin-top: -50px;
+}
+
+.result_page .result_wrapper .explanation_wrapper .explanation {
   margin-top: 10px;
   text-align: left;
+  padding: 10px;
+  border-radius: 10px;
+  background: #f4eef6;
 }
 
-.result_page .result_wrapper .character_wrapper .explanation li {
-  margin-bottom: 10px;
-}
-
-.result_page .result_wrapper .character_wrapper #after_explain {
-  font-size: 17px;
+.result_page .result_wrapper .share_wrapper {
+  text-align: center;
 }
 
 .result_page .result_wrapper .share_wrapper button {
-  background: transparent;
-  border: 2px solid gray;
+  background: #fcfcfc;
+  border: 3px solid #b799b9;
   border-radius: 15px;
   outline: none;
   font-size: 14px;
   font-weight: bold;
-  width: 40%;
-  height: 35px;
+  width: 80%;
+  height: 40px;
   line-height: 18px;
 }
 
-.result_page .result_wrapper .share_wrapper #store {
-  margin-right: 15px;
+.result_page .result_wrapper .share_wrapper .link_icon {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  margin: 0 10px;
+  padding-top: 70px;
+  margin-top: -20px;
+  cursor: pointer;
+}
+
+.result_page .result_wrapper .share_wrapper .link_icon.twitter {
+  background-image: url(/static/icon/icon-twitter.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.result_page .result_wrapper .share_wrapper .link_icon.facebook {
+  background-image: url(/static/icon/icon-facebook.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.result_page .result_wrapper .share_wrapper .link_icon.kakao {
+  background-image: url(/static/icon/icon-kakao.png);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .result_page .result_wrapper .share_wrapper .share {
