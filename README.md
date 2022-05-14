@@ -4,28 +4,28 @@
 ## 목차
 
 > - [프로젝트 소개](#프로젝트-소개)  
-> - [기술 스택](#기술-스택)  
 > - [프로젝트 링크](#프로젝트-링크)  
+> - [기술 스택](#기술-스택)  
 > - [실행 장면](#실행-장면)  
 > - [느낀 점](#느낀-점)
 
+<br/>
 
 ## 프로젝트 소개
 
 MBTI를 기반으로 한, 나의 미래 연애 날짜 측정 웹 서비스  
-Vanilla JS에 대한 이해도를 높이는 동시에 프로젝트의 라이프 사이클을 이해하기 위한 미니 프로젝트
+Vanilla JS와 ES6를 학습하는 동시에 프로젝트의 라이프 사이클을 이해하기 위한 미니 프로젝트
+
+
+## 프로젝트 링크
+
+Link : [언제쯤 연애할 수 있을까?](https://jisu00.github.io/When-can-I-Love/views/start)
 
 ## 기술 스택
 
 | HTML5 | SCSS | JavaScript |
 |:---:|:---:|:--------:|
 |<img width=70 src='https://user-images.githubusercontent.com/62230430/168433535-c4dfed5d-dc0a-4bb0-a579-a96c2f36d10e.png' />|<img width=70 src='https://user-images.githubusercontent.com/62230430/168432652-02350ea1-1686-445b-a79a-abeedba4217e.png' />|<img width=70 src='https://user-images.githubusercontent.com/62230430/168433239-381bb68c-219a-48fb-acc0-d7cd64c5061f.png' />|
-
-
-
-## 프로젝트 링크
-
-Link : [언제쯤 연애할 수 있을까?](https://jisu00.github.io/When-can-I-Love/views/start)
 
 
 ## 실행 장면
