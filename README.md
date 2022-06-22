@@ -16,10 +16,13 @@
 MBTI를 기반으로 한, 나의 미래 연애 날짜 측정 웹 서비스  
 Vanilla JS와 ES6를 학습하는 동시에 프로젝트의 라이프 사이클을 이해하기 위한 미니 프로젝트
 
+<br/>
 
 ## 프로젝트 링크
 
 Link : [언제쯤 연애할 수 있을까?](https://jisu00.github.io/When-can-I-Love/views/start)
+
+<br/>
 
 ## 기술 스택
 
@@ -27,6 +30,7 @@ Link : [언제쯤 연애할 수 있을까?](https://jisu00.github.io/When-can-I-
 |:---:|:---:|:--------:|
 |<img width=70 src='https://user-images.githubusercontent.com/62230430/168433535-c4dfed5d-dc0a-4bb0-a579-a96c2f36d10e.png' />|<img width=70 src='https://user-images.githubusercontent.com/62230430/168432652-02350ea1-1686-445b-a79a-abeedba4217e.png' />|<img width=70 src='https://user-images.githubusercontent.com/62230430/168433239-381bb68c-219a-48fb-acc0-d7cd64c5061f.png' />|
 
+<br/>
 
 ## 실행 장면
 
@@ -38,6 +42,7 @@ Link : [언제쯤 연애할 수 있을까?](https://jisu00.github.io/When-can-I-
 
 <img width=300 src='https://user-images.githubusercontent.com/62230430/168436398-c3890c5c-4b35-40be-b7db-0f5cbd7024af.gif' />
 
+<br/>
 
 ## 느낀 점
 
